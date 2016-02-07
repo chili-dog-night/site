@@ -4,7 +4,7 @@
 (def gatherings [{:date "2016/02/03"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "February 3rd, 2016: Jake's Birthday, War Room, and Divergent."
-                  :food ["Pagliacci"
+                  :food ["Cheese and Pepperoni Pizza from Pagliacci"
                          "Chips Ahoy! Chewy Chocolate Chip Cookies"
                          "Tillamook Chocolate Ice Cream"]
                   :attendees ["Alex Sanchez"
@@ -17,6 +17,8 @@
                   :media [{:title "War Room" :uri "http://www.imdb.com/title/tt3832914/"}
                           {:title "Divergent" :uri "http://www.imdb.com/title/tt1840309/"}]
                   :notes [:p
+                          (el/link-to "https://www.youtube.com/watch?v=wNNL9FIkF2E" "What if We Don't Want to Be Warm?")
+                          [:br]
                           (el/link-to "https://www.youtube.com/watch?v=pXRviuL6vMY&feature=youtu.be" "Blurryface")
                           " and "
                           (el/link-to "https://www.youtube.com/watch?v=Y_rl4ZGdy34&feature=youtu.be" "White Privilege, II")
@@ -54,7 +56,8 @@
                           [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/Amusing_Ourselves_to_Death" "Amusing Ourselves to Death")
                           [:br]
-                          (el/link-to "http://www.jamonexperience.com/en/" "A different kind of Beast Feast (for Alex)")
+                          (el/link-to "http://www.jamonexperience.com/en/" "A different kind of Beast Feast")
+                          " (for Alex)"
                           [:br]
                           (el/link-to "http://www.beanogas.com/" "Possible remedy for Jason/Kaia")
                           [:br]
