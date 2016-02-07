@@ -1,6 +1,11 @@
 (ns chili-dog-night.styles
   (:require [garden.def :refer [defstyles]]
-            [garden.selectors :as selectors]))
+            [garden.selectors :as selectors]
+            [garden.stylesheet :refer [at-media]]
+            [garden.units :refer [px px+]]))
+
+(def ^:dynamic *media-query-mobile-large* (px 425))
+(def ^:dynamic *media-query-tablet* (px 768))
 
 (defstyles normalize
   [:body
@@ -10,17 +15,25 @@
 (defstyles layout
   [:body
    {:margin "0 auto"
-    :max-width "780px"}])
+    :max-width *media-query-tablet*}
+   (at-media {:max-width (px+ *media-query-tablet* 30)}
+     [:& {:margin "0 30px"}])
+   (at-media {:max-width *media-query-mobile-large*}
+     [:& {:margin "0 20px"}])])
 
 (defstyles typography
   [:body
    {:font-family "Playfair Display"
-    :font-size "18px"
+    :font-size (px 18)
     :font-variant-ligatures "common-ligatures"
     :text-rendering "optimizeLegibility"
     :-webkit-font-feature-settings "kern"
     :font-feature-settings "kern"
-    :font-kerning "normal"}]
+    :font-kerning "normal"}
+   (at-media {:max-width *media-query-tablet*}
+     [:& {:font-size (px 16)}])
+   (at-media {:max-width *media-query-mobile-large*}
+     [:& {:font-size (px 12)}])]
   [:a
    {:font-style "italic"}]
   [:p
