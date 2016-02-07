@@ -21,7 +21,7 @@
     [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1, maximum-scale=1"}]
     (h/include-css "//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic")
-    (h/include-css "/main.css")
+    (h/include-css "/css/styles.css")
     [:title (str title " | " "Chili Dog Night")]
     head]
    [:body

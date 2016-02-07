@@ -21,7 +21,8 @@
 
 (deftask css []
   (comp
-   (garden :styles-var 'chili-dog-night.styles/screen)))
+   (garden :output-to "resources/css/styles.css"
+           :styles-var 'chili-dog-night.styles/screen)))
 
 (deftask dev []
   (comp (serve :handler 'chili-dog-night.core/handler :reload true)

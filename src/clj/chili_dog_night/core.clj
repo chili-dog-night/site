@@ -10,12 +10,11 @@
             [chili-dog-night.views :as views])
   (:gen-class))
 
-
 (defroutes routes
   (GET "/" [] (views/home (first data/gatherings)))
   (GET "/colophon" [] (views/colophon))
   (GET "/about" [] (views/about))
-  (route/files "/" {:root "target"}))
+  (route/files "/" {:root "target/resources"}))
 
 (defn read-inputstream-edn [input]
   (edn/read
