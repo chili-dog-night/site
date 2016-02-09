@@ -5,16 +5,26 @@
             [compojure.core :refer [defroutes GET]]
             [compojure.route :as route]
             [compojure.handler :as handler]
+            [clj-rss.core :as rss]
             [clojure.edn :as edn]
             [chili-dog-night.data :as data]
             [chili-dog-night.views :as views])
   (:gen-class))
 
+(def ^:dynamic *rss-feed-item-limit* 20)
+
 (defroutes routes
   (GET "/" [] (views/home (first data/gatherings)))
+  (GET "/gatherings/:year/:month/:day" [year month day]
+    (when-let [gathering (first
+                          (filter #(= (:date %) (str year "/" month "/" day))
+                                  data/gatherings))]
+      (views/gathering gathering)))
   (GET "/colophon" [] (views/colophon))
   (GET "/about" [] (views/about))
-  (route/files "/" {:root "target/resources"}))
+  (GET "/rss" [] (views/rss-feed (take *rss-feed-item-limit* data/gatherings)))
+  (route/files "/" {:root "target/resources"})
+  (route/not-found (views/not-found)))
 
 (defn read-inputstream-edn [input]
   (edn/read

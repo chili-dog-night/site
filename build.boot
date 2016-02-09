@@ -8,6 +8,8 @@
                  [ring "1.4.0"]
                  [compojure "1.4.0"]
                  [hiccup "1.0.5"]
+                 [clj-rss "0.2.3"]
+                 [clj-time "0.11.0"]
                  [org.omcljs/om "1.0.0-alpha28"]
                  [org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.7.228"]

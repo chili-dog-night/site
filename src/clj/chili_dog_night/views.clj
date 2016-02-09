@@ -1,6 +1,10 @@
 (ns chili-dog-night.views
   (:require [hiccup.page :as h]
-            [hiccup.element :as el]))
+            [hiccup.element :as el]
+            [clj-rss.core :as rss]
+            [clj-time.core :as t]
+            [clj-time.coerce :as c]
+            [clj-time.format :as f]))
 
 (defn header []
   [:header {:role "banner"}
@@ -8,7 +12,8 @@
    [:nav
     (el/unordered-list [;(el/link-to "/gatherings" "Gatherings")
                         (el/link-to "/about" "About")
-                        (el/link-to "/colophon" "Colophon")])]])
+                        (el/link-to "/colophon" "Colophon")
+                        (el/link-to "/rss" "RSS")])]])
 
 (defn footer []
   [:footer {:role "contentinfo"}
@@ -41,7 +46,7 @@
        ", and "
        (last coll)))
 
-(defn gathering [data]
+(defn gathering-partial [data]
   [:section
    [:h2 (:date data)]
    [:p (comma-separate-str (sort (:attendees data)))
@@ -52,10 +57,22 @@
    [:p "This is what they discussed during, and between films:"]
    (:notes data)])
 
+(defn not-found []
+  (common "404"
+          [:meta {:description "You look lost."}]
+          [:section
+           [:h2 404]
+           [:p "The resource you requested was not found."]]))
+
 (defn home [data]
   (common "Our cinematic torture chamber."
           [:meta {:description "This is the story of a friendship forged in food, film, and fear. It is pain, but it is also laughter. This is Chili Dog Night."}]
-          (gathering data)))
+          (gathering-partial data)))
+
+(defn gathering [data]
+  (common (:date data)
+          [:meta {:description (:synopsis data)}]
+          (gathering-partial data)))
 
 (defn about []
   (common "About"
@@ -96,7 +113,9 @@
             (el/link-to "https://github.com/weavejester/hiccup" "Hiccup")
             ", and the Cascading Style Sheets (CSS) are grown with help from "
             (el/link-to "https://github.com/noprompt/garden" "Garden")
-            ". The font throughout is "
+            ". The Really Simple Syndication (RSS) feed is created via "
+            (el/link-to "https://github.com/yogthos/clj-rss" "clj-rss")
+            ". The font used throughout is "
             (el/link-to "https://www.google.com/fonts/specimen/Playfair+Display" "Playfair Display")
             " provided by "
             (el/link-to "https://www.google.com/fonts" "Google Fonts")
@@ -106,3 +125,24 @@
             ", and the source code is stored on "
             (el/link-to "https://github.com" "GitHub")
             "."]]))
+
+(defn str->date [str]
+  (c/to-date (f/parse (f/formatter "yyyy/MM/dd") str)))
+
+(defn rss-feed-item [item]
+  (let [date (:date item)]
+    {:title date
+     :pubDate (str->date date)
+     :description (:synopsis item)
+     :link (str "http://www.chilidognight.com/gatherings/" date)}))
+
+(defn rss-feed [items]
+  (rss/channel-xml {:title "Chili Dog Night"
+                    :language "en-us"
+                    :pubDate (c/to-date (t/today-at 12 00))
+                    :lastBuildDate (str->date (:date (first items)))
+                    :docs "http://blogs.law.harvard.edu/tech/rss"
+                    :link "http://www.chilidognight.com"
+                    :copyright "Copyright 2016, Chili Dog Night Productions"
+                    :description "The latest gatherings from your friends at Chili Dog Night."}
+                   (map rss-feed-item items)))
