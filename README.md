@@ -27,8 +27,4 @@ If everything went according to plan you can view the site at [http://localhost:
 
 ## Deploy
 
-Assuming you have used SSH and are connected to the virtual machine, you can set up the [Heroku Toolbelt](https://toolbelt.heroku.com/debian) from the prompt via...
-
-```bash
-heroku login
-```
+Deployment is triggered automatically when a push to the master branch of this repository. However, it is still possible to push manually to a Heroku remote using Git if desired. For this purpose, and auxiliary application management the [Heroku Toolbelt](https://toolbelt.heroku.com/debian) is included in the virtual machine image.
