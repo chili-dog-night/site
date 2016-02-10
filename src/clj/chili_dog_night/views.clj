@@ -120,10 +120,12 @@
             " provided by "
             (el/link-to "https://www.google.com/fonts" "Google Fonts")
             "."]
-           [:p "Hosting of the application is provided by "
+           [:p "The domain name was purchased through "
+            (el/link-to "https://www.namecheap.com/" "NameCheap")
+            ". Hosting of the application is provided by "
             (el/link-to "https://www.heroku.com" "Heroku")
-            ", and the source code is stored on "
-            (el/link-to "https://github.com" "GitHub")
+            ". The project source code is publicly available and stored on "
+            (el/link-to "https://github.com/chili-dog-night/site" "GitHub")
             "."]]))
 
 (defn str->date [str]
