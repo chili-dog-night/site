@@ -42,9 +42,11 @@
   (concat [" "] (reduce #(apply vector [% ", " %2]) coll)))
 
 (defn comma-separate-str [coll]
-  (str (reduce #(str % ", " %2) (drop-last coll))
+  (if (= (count coll) 1)
+    (first coll)
+    (str (reduce #(str % ", " %2) (drop-last coll))
        ", and "
-       (last coll)))
+       (last coll))))
 
 (defn gathering-partial [data]
   [:section
