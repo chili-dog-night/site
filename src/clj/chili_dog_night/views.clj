@@ -29,6 +29,7 @@
     (h/include-css "//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic")
     (h/include-css "/css/styles.css")
     [:title (str title " | " "Chili Dog Night")]
+    [:link {:rel "alternate" :type "application/rss+xml" :href "/rss" :title "Chili Dog Night"}]
     head]
    [:body
     (header)
