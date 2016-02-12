@@ -24,6 +24,10 @@
                           [:br]
                           (el/link-to "http://www.newyorker.com/culture/cultural-comment/hello-again-the-weirdness-of-the-lcd-soundsystem-reunion" "LCD Soundsystem Reunion")
                           [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=nWPM1jTnuuo" "The Choice")
+                          [:br]
+                          (el/link-to "http://www.bbc.com/news/world-us-canada-35552820" "The Oregon Standoff")
+                          [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/United_States_Postmaster_General" "The highest paid government official")
                           [:br]
                           (el/link-to "https://www.washingtonpost.com/news/federal-eye/wp/2015/08/24/millennials-working-in-government-are-at-their-lowest-levels-in-five-yearsnew-report-finds/" "Erosion of the government workforce")

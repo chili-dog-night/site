@@ -4,7 +4,8 @@
             [clj-rss.core :as rss]
             [clj-time.core :as t]
             [clj-time.coerce :as c]
-            [clj-time.format :as f]))
+            [clj-time.format :as f]
+            [clojure.string :as str]))
 
 (defn header []
   [:header {:role "banner"}
@@ -36,7 +37,8 @@
 
 (defn film-citation [film]
   [:cite
-   (el/link-to (:uri film) (:title film))])
+   (el/link-to (:uri film)
+               (str/replace (:title film) #"\s" "&nbsp;"))])
 
 (defn comma-separate [coll]
   (concat [" "] (reduce #(apply vector [% ", " %2]) coll)))
@@ -55,7 +57,7 @@
     " experienced "
     (comma-separate
      (map film-citation (:media data)))
-    ". They ate " (comma-separate-str (:food data)) " en masse."]
+    ". They ate " (comma-separate-str (:food data)) "."]
    [:p "This is what they discussed during, and between films:"]
    (:notes data)])
 
