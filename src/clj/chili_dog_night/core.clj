@@ -22,7 +22,10 @@
       (views/gathering gathering)))
   (GET "/colophon" [] (views/colophon))
   (GET "/about" [] (views/about))
-  (GET "/rss" [] (views/rss-feed (take *rss-feed-item-limit* data/gatherings)))
+  (GET "/rss" []
+    {:status 200
+     :headers {"Content-Type" "text/xml"}
+     :body (views/rss-feed (take *rss-feed-item-limit* data/gatherings))})
   (route/files "/" {:root "target/resources"})
   (route/not-found (views/not-found)))
 
