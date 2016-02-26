@@ -3,7 +3,7 @@
  :source-paths #{"src/clj" "src/cljs"}
  :dependencies '[[adzerk/boot-cljs "1.7.228-1"]
                  [adzerk/boot-reload "0.4.5"]
-                 [pandeiro/boot-http "0.7.1-SNAPSHOT"]
+                 [pandeiro/boot-http "0.7.3"]
                  [org.martinklepsch/boot-garden "1.3.0-0"]
                  [ring "1.4.0"]
                  [compojure "1.4.0"]
