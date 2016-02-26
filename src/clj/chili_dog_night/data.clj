@@ -1,7 +1,29 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/02/10"
+(def gatherings [{:date "2016/02/24"
+                  :address "1808 SW Elmgrove St, Seattle, WA 98106, USA"
+                  :synopsis "February 24th, 2016: Pizza plus Worms, Jem and the Holograms, and The Visit."
+                  :food ["Pizza from Frelard Pizza Company"
+                         "Trolli Sour Brite Crawlers Gummi Candy"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"]
+                  :media [{:title "Jem and the Holograms" :uri "http://www.imdb.com/title/tt3614530/"}
+                          {:title "The Visit" :uri "http://www.imdb.com/title/tt3567288/"}]
+                  :notes [:p
+                          (el/link-to "https://www.instagram.com/p/BCMvCdjMX6V/" "Jammers")
+                          [:br]
+                          (el/link-to "http://jezebel.com/how-we-failed-to-protect-kesha-1760142637?rev=1455919264571" "The Pending Emancipation of Kesha")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Found_footage_(pseudo-documentary)" "Found Footage")
+                          " and "
+                          (el/link-to "http://www.mediapost.com/publications/article/164602/hasbro-plays-product-placement-game.html#ixzz1hBGO1uEO" "Hasbro Product Placement")
+                          [:br]
+                          "The implosion of the Republican party by the coward "
+                          (el/link-to "http://www.rollingstone.com/politics/news/how-america-made-donald-trump-unstoppable-20160224?page=12" "Donald Trump")]}
+                 {:date "2016/02/10"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "February 10th, 2016: Sausages and Hot Dogs, Jackie & Ryan, and Insurgent."
                   :food ["Sausages"
