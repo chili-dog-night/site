@@ -21,7 +21,7 @@
                           " and "
                           (el/link-to "http://www.mediapost.com/publications/article/164602/hasbro-plays-product-placement-game.html#ixzz1hBGO1uEO" "Hasbro Product Placement")
                           [:br]
-                          "The implosion of the Republican party by the coward "
+                          "The assassination of the Republican party by the coward "
                           (el/link-to "http://www.rollingstone.com/politics/news/how-america-made-donald-trump-unstoppable-20160224?page=12" "Donald Trump")]}
                  {:date "2016/02/10"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
