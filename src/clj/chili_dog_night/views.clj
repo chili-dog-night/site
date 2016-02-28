@@ -11,10 +11,8 @@
   [:header {:role "banner"}
    [:h1 (el/link-to "/" "Chili Dog Night")]
    [:nav
-    (el/unordered-list [;(el/link-to "/gatherings" "Gatherings")
-                        (el/link-to "/about" "About")
-                        (el/link-to "/colophon" "Colophon")
-                        (el/link-to "/rss" "RSS")])]])
+    (el/unordered-list [(el/link-to "/about" "About")
+                        (el/link-to "/colophon" "Colophon")])]])
 
 (defn footer []
   [:footer {:role "contentinfo"}
@@ -37,12 +35,17 @@
     (footer)]))
 
 (defn film-citation [film]
-  [:cite
+  [:cite {:itemscope ""
+          :itemtype "http://schema.org/Movie"}
+   [:meta {:itemprop "name"
+           :content (:title film)}]
    (el/link-to (:uri film)
                (str/replace (:title film) #"\s" "&nbsp;"))])
 
-(defn comma-separate [coll]
-  (concat [" "] (reduce #(apply vector [% ", " %2]) coll)))
+(defn person [name]
+  [:span {:itemscope ""
+          :itemtype "http://schema.org/Person"}
+   [:span {:itemprop "name"} name]])
 
 (defn comma-separate-str [coll]
   (if (= (count coll) 1)
@@ -51,14 +54,23 @@
        ", and "
        (last coll))))
 
+(defn comma-separate [coll]
+  (reduce into (concat
+                (map #(vec [% ", "])
+                     (drop-last 2 coll)) 
+                (reduce #(vec [[ % ", and "] [%2]])
+                        (take-last 2 coll)))))
+
 (defn gathering-partial [data]
   [:section
    [:h2 (:date data)]
-   [:p (comma-separate-str (sort (:attendees data)))
-    " experienced "
-    (comma-separate
-     (map film-citation (:media data)))
-    ". They ate " (comma-separate-str (:food data)) "."]
+   (reduce into [:p]
+           [(comma-separate (map person (sort (:attendees data))))
+            " experienced "
+            (comma-separate (map film-citation (:media data)))
+            ". They ate "
+            (comma-separate-str (:food data))
+            "."])
    [:p "This is what they discussed during, and between films:"]
    (:notes data)])
 
@@ -93,9 +105,19 @@
             ", the real focus, and most painful kind of movie, is mainstream mediocrity, like "
             (film-citation {:title "Aloha" :uri "http://www.imdb.com/title/tt1243974/"})
             "."]
-           [:p "As of this moment Chili Dog Night is Alex Sanchez, Jason Aumann, "
-            "Greg Ryan, Jacob Dobner, Matt Beck, Colin Teal, and Kaia. They all hail from Seattle, "
-            "and are slowly losing their minds one film at a time."]]))
+           [:p "As of this moment Chili Dog Night is "
+            (person "Alex Sanchez")
+            ", "
+            (person "Jason Aumann")
+            ", "
+            (person "Greg Ryan")
+            ", "
+            (person "Jacob Dobner")
+            ", "
+            (person "Matt Beck")
+            ", "
+            (person "Colin Teal")
+            ", and Kaia. They all hail from Seattle, and are slowly losing their minds one film at a time."]]))
 
 (defn colophon []
   (common "Colophon"
