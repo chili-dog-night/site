@@ -5,9 +5,10 @@
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 2nd, 2016: Chili Dogs, Fuller House, The Intern, and Before We Go."
                   :food ["Chili Dogs"
+                         "King's Hawaiian Original Sweet Dinner Rolls"
                          "Red Velvet Oreo Sandwich Cookies"
                          "Oreo Mega Stuf Chocolate Sandwich Cookies"
-                         "Chips Ahoy! Original Chocolate Chip"]
+                         "Chips Ahoy! Original Chocolate Chip Cookies"]
                   :attendees ["Alex Sanchez"
                               "Greg Ryan"
                               "Jason Aumann"
@@ -34,6 +35,10 @@
                           (el/link-to "http://www.avclub.com/review/netflixs-fuller-house-porn-parody-without-porn-232696" "Fuller House is like a porn parody without the porn")
                           [:br]
                           (el/link-to "https://www.youtube.com/watch?v=fJWmbLS2_ec" "Kokomo")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=UCJJ1iZuoQ4" "Dekkar")
+                          " performs at "
+                          (el/link-to "https://www.youtube.com/watch?v=ANNOQWby8R8" "The 4th Annual Live On Cinema Oscar Special")
                           [:br]
                           (el/link-to "http://www.imdb.com/name/nm1913734/" "The")
                           " "
