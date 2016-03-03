@@ -76,24 +76,24 @@
 
 (defn not-found []
   (common "404"
-          [:meta {:description "You look lost."}]
+          [:meta {:name "description" :content "You look lost."}]
           [:section
            [:h2 404]
            [:p "The resource you requested was not found."]]))
 
 (defn home [data]
   (common "Our cinematic torture chamber."
-          [:meta {:description "This is the story of a friendship forged in food, film, and fear. It is pain, but it is also laughter. This is Chili Dog Night."}]
+          [:meta {:name "description" :content "This is the story of a friendship forged in food, film, and fear. It is pain, but it is also laughter. This is Chili Dog Night."}]
           (gathering-partial data)))
 
 (defn gathering [data]
   (common (:date data)
-          [:meta {:description (:synopsis data)}]
+          [:meta {:name "description" :content (:synopsis data)}]
           (gathering-partial data)))
 
 (defn about []
   (common "About"
-          [:meta {:description "Somehow we got the part. Don't ask. This is Chili Dog Night."}]
+          [:meta {:name "description" :content "Somehow we got the part. Don't ask. This is Chili Dog Night."}]
           [:section
            [:h2 "About"]
            [:p "Chili Dog Night is a celebration of the worst kinds of moving images "
@@ -121,7 +121,7 @@
 
 (defn colophon []
   (common "Colophon"
-          [:meta {:description "We made it good with a beginning, middle, and end. This is Chili Dog Night."}]
+          [:meta {:name "description" :content "We made it good with a beginning, middle, and end. This is Chili Dog Night."}]
           [:section
            [:h2 "Colophon"]
            [:p "This website was made possible by "
