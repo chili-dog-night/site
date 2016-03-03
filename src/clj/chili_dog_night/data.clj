@@ -30,11 +30,13 @@
                           " "
                           (el/link-to "http://www.apa.org/monitor/jun06/emerging.aspx" "Adulthood")
                           [:br]
-                          (el/link-to "https://en.wikipedia.org/wiki/Red_velvet_cake" "Red Velvet")
-                          [:br]
                           (el/link-to "http://www.avclub.com/review/netflixs-fuller-house-porn-parody-without-porn-232696" "Fuller House is like a porn parody without the porn")
                           [:br]
                           (el/link-to "https://www.youtube.com/watch?v=fJWmbLS2_ec" "Kokomo")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Red_velvet_cake" "Red Velvet")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=FR3u0WSEcgE" "#eatlikeaking")
                           [:br]
                           (el/link-to "https://www.youtube.com/watch?v=UCJJ1iZuoQ4" "Dekkar")
                           " performs at "
@@ -51,6 +53,8 @@
                           (el/link-to "https://www.youtube.com/watch?v=8jzDnsjYv9A" "Writing's on the Wall")
                           [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/Neanderthal" "Neanderthals")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=eW5_ZUFaKEw" "Spit Takes")
                           [:br]
                           (el/link-to "http://gawker.com/centennials-are-the-new-millennials-are-the-new-menaces-1705468073" "Centennials")]}
                  {:date "2016/02/24"
