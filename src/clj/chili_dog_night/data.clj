@@ -19,7 +19,7 @@
                           {:title "The Intern" :uri "http://www.imdb.com/title/tt2361509/"}
                           {:title "Before We Go" :uri "http://www.imdb.com/title/tt0443465/"}]
                   :notes [:p
-                          (el/link-to "http://www.imdb.com/title/tt3986586/" "Master of None")
+                          (el/link-to "http://www.imdb.com/title/tt4635276/" "Master of None")
                           ", "
                           (el/link-to "http://www.imdb.com/title/tt4061080/" "Love")
                           ", and "
