@@ -1,7 +1,54 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/02/24"
+(def gatherings [{:date "2016/03/02"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "March 2nd, 2016: Chili Dogs, Fuller House, The Intern, and Before We Go."
+                  :food ["Chili Dogs"
+                         "Red Velvet Oreo Sandwich Cookies"
+                         "Oreo Mega Stuf Chocolate Sandwich Cookies"
+                         "Chips Ahoy! Original Chocolate Chip"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
+                          {:title "The Intern" :uri "http://www.imdb.com/title/tt2361509/"}
+                          {:title "Before We Go" :uri "http://www.imdb.com/title/tt0443465/"}]
+                  :notes [:p
+                          (el/link-to "http://www.imdb.com/title/tt3986586/" "Master of None")
+                          ", "
+                          (el/link-to "http://www.imdb.com/title/tt4061080/" "Love")
+                          ", and "
+                          (el/link-to "http://www.imdb.com/title/tt3398228/" "BoJack Horseman")
+                          ": Hollywood writing what it knows"
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Emerging_adulthood_and_early_adulthood" "Emerging")
+                          " "
+                          (el/link-to "http://www.apa.org/monitor/jun06/emerging.aspx" "Adulthood")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Red_velvet_cake" "Red Velvet")
+                          [:br]
+                          (el/link-to "http://www.avclub.com/review/netflixs-fuller-house-porn-parody-without-porn-232696" "Fuller House is like a porn parody without the porn")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=fJWmbLS2_ec" "Kokomo")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/name/nm1913734/" "The")
+                          " "
+                          (el/link-to "http://www.imdb.com/name/nm0544718/" "Mara")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Tim_Mara" "Family")
+                          [:br]
+                          (el/link-to "http://www.nytimes.com/2016/03/01/arts/sam-smith-the-only-openly-gay-oscar-winner-not-really.html?_r=0" "Sam Smith")
+                          " the "
+                          (el/link-to "https://www.youtube.com/watch?v=8jzDnsjYv9A" "Writing's on the Wall")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Neanderthal" "Neanderthals")
+                          [:br]
+                          (el/link-to "http://gawker.com/centennials-are-the-new-millennials-are-the-new-menaces-1705468073" "Centennials")]}
+                 {:date "2016/02/24"
                   :address "1808 SW Elmgrove St, Seattle, WA 98106, USA"
                   :synopsis "February 24th, 2016: Pizza plus Worms, Jem and the Holograms, and The Visit."
                   :food ["Pizza from Frelard Pizza Company"
