@@ -11,7 +11,8 @@
   [:header {:role "banner"}
    [:h1 (el/link-to "/" "Chili Dog Night")]
    [:nav
-    (el/unordered-list [(el/link-to "/about" "About")
+    (el/unordered-list [(el/link-to "/ratings" "Ratings")
+                        (el/link-to "/about" "About")
                         (el/link-to "/colophon" "Colophon")])]])
 
 (defn footer []
@@ -103,6 +104,33 @@
               [:div {:style "text-align: right;"}
                (el/link-to (str "/gatherings/" (:date previous)) "Previously...")])])))
 
+(defn admin [a b]
+  (common "Behind the Scenes"
+          nil
+          [:div
+           [:section {:id "app"}
+            [:h2 "Which is worse?"]
+            [:form {:action "/api/media/vote"
+                    :method "post"}
+             [:div
+              [:input {:type "radio"
+                       :name "selected-media-id"
+                       :value (:id a)
+                       :checked true}]
+              [:label (:title a)]]
+             [:div
+              [:input {:type "radio"
+                       :name "selected-media-id"
+                       :value (:id b)}]
+              [:label (:title b)]]
+             [:input {:type "hidden"
+                      :name "media-a-id"
+                      :value (:id a)}]
+             [:input {:type "hidden"
+                      :name "media-b-id"
+                      :value (:id b)}]
+             [:button "I've made my decision"]]]]))
+
 (defn about []
   (common "About"
           [:meta {:name "description" :content "Somehow we got the part. Don't ask. This is Chili Dog Night."}]
@@ -166,6 +194,17 @@
             ". The project source code is publicly available and stored on "
             (el/link-to "https://github.com/chili-dog-night/site" "GitHub")
             "."]]))
+
+(defn ratings [media]
+  (common "Ratings"
+          [:meta {:name "description" :content "The films we have suffered through from worst to less worse."}]
+          [:section
+           [:h2 "Ratings"]
+           [:p "The order below has been determined via random head to head voting. Each film is given an initial base rating that is updated per the "
+            (el/link-to "https://en.wikipedia.org/wiki/Elo_rating_system" "Elo rating system")
+            ". That is to say adjustments are made to winner and loser based on the expected result versus the actual result for any given dual."]
+           [:ol
+            (map #(vec [:li (film-citation %)]) media)]]))
 
 (defn str->date [str]
   (c/to-date (f/parse (f/formatter "yyyy/MM/dd") str)))

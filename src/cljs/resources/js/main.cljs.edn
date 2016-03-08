@@ -1,0 +1,3 @@
+{:require [chili-dog-night.core]
+ :init-fns [chili-dog-night.core/main]
+ :compiler-options {:asset-path "js/main.out"}}

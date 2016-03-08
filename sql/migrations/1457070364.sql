@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS media
+(
+  id SERIAL NOT NULL UNIQUE,
+  title TEXT NOT NULL,
+  uri TEXT NOT NULL,
+  rating INT NOT NULL,
+  viewed_at DATE NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL,
+  updated_at TIMESTAMPTZ,
+  PRIMARY KEY (id)
+);

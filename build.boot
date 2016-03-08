@@ -11,10 +11,15 @@
                  [hiccup "1.0.5"]
                  [clj-rss "0.2.3"]
                  [clj-time "0.11.0"]
+                 [java-jdbc/dsl "0.1.3"]
+                 [buddy/buddy-auth "0.9.0"]
+                 [org.postgresql/postgresql "9.4.1208"]
                  [org.omcljs/om "1.0.0-alpha28"]
                  [org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.7.228"]
-                 [org.clojure/core.async "0.2.371"]])
+                 [org.clojure/core.async "0.2.371"]
+                 [org.clojure/java.jdbc "0.4.2"]
+                 [org.clojure/math.numeric-tower "0.0.4"]])
 
 (require
  '[adzerk.boot-cljs :refer [cljs]]
@@ -31,8 +36,8 @@
   (comp (serve :handler 'chili-dog-night.core/handler :reload true)
         (watch)
         (css)
-        (reload :on-jsload 'chili-dog-night.core/main)
-        (cljs :source-map true :optimizations :none)))
+        (reload :ids #{"resources/js/main"})
+        (cljs :ids #{"resources/js/main"} :source-map true :optimizations :none)))
 
 (deftask build []
   (comp
