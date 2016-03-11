@@ -1,7 +1,121 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/03/02"
+(def gatherings [{:date "2016/03/09"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "March 9th, 2016: Fettuccine Alfredo, Fuller House, San Andreas, and David and Goliath."
+                  :food ["Fettuccine Alfredo"
+                         "Tim's Cascade Coney Island Chips"
+                         "Red Velvet Oreo Sandwich Cookies"
+                         "Pepperidge Farm Double Chocolate Milano"
+                         "Pepperidge Farm Dessert Shop S'mores Cookies"
+                         "Pepperidge Farm Montauk Milk Chocolate Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
+                          {:title "San Andreas" :uri "http://www.imdb.com/title/tt2126355/"}
+                          {:title "David and Goliath" :uri "http://www.imdb.com/title/tt3962210/"}]
+                  :notes [:p
+                          (el/link-to "http://www.seattletimes.com/seattle-news/greenwood-explosion-destroys-buildings-injures-9-firefighters/" "Explosion in Greenwood")
+                          [:br]
+                          (el/link-to "http://www.eonline.com/news/746872/jodie-sweetin-isn-t-paying-attention-to-miley-cyrus-instagram-photo" "Miley Cyrus vs Jodie Sweetin")
+                          " ("
+                          (el/link-to "https://s-media-cache-ak0.pinimg.com/736x/d9/ac/99/d9ac99d6eeb539dd119cfbecbb3c4d19.jpg" "Whoever wins...we lose")
+                          ")"
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Hydrox" "Hydrox")
+                          " "
+                          (el/link-to "http://www.npr.org/2015/09/23/442761531/one-mans-mission-to-bring-back-hydrox-cookies" "returns")
+                          [:br]
+                          (el/link-to "https://www.usa.gov/elected-officials" "Contacting your senator or congressman")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Go_(game)" "Go")
+                          ", or: "
+                          (el/link-to "https://deepmind.com/alpha-go.html" "Computer beats human at Ken Griffey Jr. Baseball")
+                          [:br]
+                          (el/link-to "http://kernelmag.dailydot.com/issue-list/the-future-of-work/" "Automation")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Basic_income" "Basic Income")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Rent-seeking" "rent-seeking")
+                          " ("
+                          (el/link-to "https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century" "Capital in the Twenty-First Century")
+                          ")"
+                          [:br]
+                          (el/link-to "http://www.latimes.com/nation/nationnow/la-na-immigration-family-detention-20151020-story.html" "Immigrant family")
+                          " "
+                          (el/link-to "https://news.vice.com/article/how-us-immigrant-detention-facilities-get-away-with-being-complete-hellholes" "detention centers")
+                          [:br]
+                          (el/link-to "http://www.pablopicasso.org/cubism.jsp" "Picasso's")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Cubism" "Cubism")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors" "Eigenvalues")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Linear_algebra" "linear algebra")
+                          [:br]
+                          (el/link-to "http://tidal.com/" "Tidal")
+                          [:br]
+                          (el/link-to "http://www.theonion.com/" "The Onion")
+                          " on "
+                          (el/link-to "https://www.instagram.com/theonion/?hl=en" "Instagram")
+                          ", "
+                          (el/link-to "http://www.clickhole.com/" "ClickHole")
+                          ", and "
+                          (el/link-to "http://www.clickhole.com/quiz/how-deep-your-love-beautiful-super-mario-how-endle-1455" "How deep is your love for the beautiful Super Mario?")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Tsunami" "Tsunamis")
+                          " and "
+                          (el/link-to "https://www.youtube.com/watch?v=Wx9vPv-T51I" "how they work")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Richter_magnitude_scale" "Richter")
+                          " vs. "
+                          (el/link-to "https://en.wikipedia.org/wiki/Moment_magnitude_scale" "Moment magnitude")
+                          " scale"
+                          [:br]
+                          (el/link-to "https://www.oculus.com/en-us/" "Oculus Rift")
+                          " and the "
+                          (el/link-to "https://www.google.com/get/cardboard/" "burgeoning")
+                          " "
+                          (el/link-to "http://www.theatlantic.com/magazine/archive/2015/10/virtual-reality-gets-real/403225/" "virtual reality")
+                          [:br]
+                          (el/link-to "http://www.nytimes.com/2016/03/10/style/second-wachowski-sibling-comes-out-as-transgender-woman.html" "Lilly Wachowski")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Fraternal_birth_order_and_male_sexual_orientation" "fraternal birth order and male sexual orientation")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Dinesh_D%27Souza" "Dinesh")
+                          " "
+                          (el/link-to "http://www.vanityfair.com/news/2015/04/dinesh-dsouza-video-life-after-conviction" "D'Souza")
+                          " teases "
+                          (el/link-to "https://www.youtube.com/watch?v=r7e6gLht6OQ" "Hillary's America")
+                          [:br]
+                          (el/link-to "http://obduction.com/" "Obduction")
+                          " from the creators of "
+                          (el/link-to "https://en.wikipedia.org/wiki/Myst" "Myst")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Diane_Arbus" "Diane Arbus")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Vivian_Maier" "Vivian Maier")
+                          " and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Motivation#Intrinsic_motivation" "intrinsic motivation")
+                          ", "
+                          (el/link-to "http://www.humansofnewyork.com/" "Humans of New York")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Knight_of_Cups_(film)" "Knight of Cups")
+                          [:br]
+                          (el/link-to "https://github.com/gorhill/uBlock" "uBlock Origin")
+                          ": "
+                          (el/link-to "https://github.com/fivefilters/block-ads/wiki/There-are-no-acceptable-ads#wrapper" "there are no acceptable ads")
+                          " (tell "
+                          (el/link-to "https://nakedsecurity.sophos.com/2016/02/10/wired-to-ad-blocker-users-pay-up-for-ad-free-site-or-you-get-nothing/" "Wired")
+                          ")"
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=4rW1wuNyDKg" "The big Foo Fighters announcement")]}
+                 {:date "2016/03/02"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 2nd, 2016: Chili Dogs, Fuller House, The Intern, and Before We Go."
                   :food ["Chili Dogs"
