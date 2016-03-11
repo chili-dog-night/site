@@ -50,6 +50,8 @@
                           " "
                           (el/link-to "https://news.vice.com/article/how-us-immigrant-detention-facilities-get-away-with-being-complete-hellholes" "detention centers")
                           [:br]
+                          (el/link-to "https://bfi.org/about-fuller/big-ideas/geodesic-domes" "Fuller's House")
+                          [:br]
                           (el/link-to "http://www.pablopicasso.org/cubism.jsp" "Picasso's")
                           " "
                           (el/link-to "https://en.wikipedia.org/wiki/Cubism" "Cubism")
