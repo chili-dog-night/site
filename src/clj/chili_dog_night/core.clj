@@ -1,4 +1,5 @@
 (ns chili-dog-night.core
+  (:use ring.middleware.gzip)
   (:require [ring.util.response :refer [file-response]]
             [ring.adapter.jetty :refer [run-jetty]]
             [ring.middleware.reload :refer [wrap-reload]]
@@ -44,7 +45,8 @@
 
 (def handler
   (wrap-reload (-> routes
-                   parse-edn-body)))
+                   parse-edn-body
+                   (wrap-gzip))))
 
 (defn -main [& [port]]
   (run-jetty handler {:join? false

@@ -6,6 +6,7 @@
                  [pandeiro/boot-http "0.7.3"]
                  [org.martinklepsch/boot-garden "1.3.0-0"]
                  [ring "1.4.0"]
+                 [amalloy/ring-gzip-middleware "0.1.3"]
                  [compojure "1.4.0"]
                  [hiccup "1.0.5"]
                  [clj-rss "0.2.3"]
