@@ -15,12 +15,12 @@
 (def ^:dynamic *rss-feed-item-limit* 20)
 
 (defroutes routes
-  (GET "/" [] (views/home (first data/gatherings)))
+  (GET "/" [] (apply views/home (take 2 data/gatherings)))
   (GET "/gatherings/:year/:month/:day" [year month day]
-    (when-let [gathering (first
-                          (filter #(= (:date %) (str year "/" month "/" day))
-                                  data/gatherings))]
-      (views/gathering gathering)))
+    (let [gatherings (drop-while #(not (= (:date %) (str year "/" month "/" day)))
+                                 data/gatherings)]
+      (when-not (empty? gatherings)
+        (apply views/gathering (take 2 gatherings)))))
   (GET "/colophon" [] (views/colophon))
   (GET "/about" [] (views/about))
   (GET "/rss" []

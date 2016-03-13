@@ -81,15 +81,27 @@
            [:h2 404]
            [:p "The resource you requested was not found."]]))
 
-(defn home [data]
-  (common "Our cinematic torture chamber."
-          [:meta {:name "description" :content "This is the story of a friendship forged in food, film, and fear. It is pain, but it is also laughter. This is Chili Dog Night."}]
-          (gathering-partial data)))
+(defn home
+  ([latest] (home latest nil))
+  ([latest previous]
+   (common "Our cinematic torture chamber."
+           [:meta {:name "description" :content "This is the story of a friendship forged in food, film, and fear. It is pain, but it is also laughter. This is Chili Dog Night."}]
+           [:div
+            (gathering-partial latest)
+            (when-not (nil? previous)
+              [:div {:style "text-align: right;"}
+               (el/link-to (str "/gatherings/" (:date previous)) "Previously...")])])))
 
-(defn gathering [data]
-  (common (:date data)
-          [:meta {:name "description" :content (:synopsis data)}]
-          (gathering-partial data)))
+(defn gathering
+  ([latest] (gathering latest nil))
+  ([latest previous]
+   (common (:date latest)
+           [:meta {:name "description" :content (:synopsis latest)}]
+           [:div
+            (gathering-partial latest)
+            (when-not (nil? previous)
+              [:div {:style "text-align: right;"}
+               (el/link-to (str "/gatherings/" (:date previous)) "Previously...")])])))
 
 (defn about []
   (common "About"
