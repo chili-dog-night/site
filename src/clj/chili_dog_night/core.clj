@@ -19,7 +19,7 @@
   (:gen-class))
 
 (def ^:dynamic *rss-feed-item-limit* 20)
-(def ^:dynamic *auth-data* {:admin "secret"})
+(def ^:dynamic *auth-data* {:admin (System/getenv "CHILI_DOG_NIGHT_ADMIN_PASSWORD")})
 (def ^:dynamic db-spec (System/getenv "DATABASE_URL"))
 
 (defn basic-auth [req {:keys [username password]}]
