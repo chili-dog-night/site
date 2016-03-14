@@ -203,6 +203,7 @@
            [:p "The order below has been determined via random head to head voting. Each film is given an initial base rating that is updated per the "
             (el/link-to "https://en.wikipedia.org/wiki/Elo_rating_system" "Elo rating system")
             ". That is to say adjustments are made to winner and loser based on the expected result versus the actual result for any given dual."]
+           [:p "They films are ordered from worst to least worst (best)."]
            [:ol
             (map #(vec [:li (film-citation %)]) media)]]))
 
