@@ -1,7 +1,106 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/03/09"
+(def gatherings [{:date "2016/03/16"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "March 16th, 2016: Cookies, Fuller House, Pinocchio, and David and Goliath."
+                  :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"
+                         "Pepperidge Farm Double Chocolate Milano"
+                         "Pepperidge Farm Dulce de Leche Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
+                          {:title "Pinocchio" :uri "http://www.imdb.com/title/tt2826774/"}
+                          {:title "Extraction" :uri "http://www.imdb.com/title/tt4382872/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/H._P._Lovecraft" "Lovecraft")
+                          "-"
+                          (el/link-to "https://en.wikipedia.org/wiki/Harry_Houdini" "Houdini")
+                          ": "
+                          (el/link-to "http://www.theguardian.com/books/2016/mar/16/hp-lovecraft-harry-houdini-manuscript-cancer-superstition-memorabilia" "The Cancer of Superstition")
+                          [:br]
+                          (el/link-to "http://www.nytimes.com/2016/03/17/us/politics/obama-supreme-court-nominee.html" "Merrick Garland")
+                          ", and "
+                          (el/link-to "http://www.nytimes.com/2016/03/17/us/politics/candidates-stick-to-party-lines-in-debate-over-supreme-court-nomination.html?ribbon-ad-idx=4&rref=politics&module=Ribbon&version=context&region=Header&action=click&contentCollection=Politics&pgtype=article" "Republican obstructionism")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(U.S._TV_series)" "Dancing with the Stars")
+                          [:br]
+                          "The "
+                          (el/link-to "https://www.youtube.com/watch?v=IdvDbbTnkyI" "Nabisco Thing")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Paul_Scheer" "Paul Scheer")
+                          " conspiracy theory"
+                          [:br]
+                          "Age of "
+                          (el/link-to "https://en.wikipedia.org/wiki/Micro" "Micro")
+                          ": "
+                          (el/link-to "https://en.wikipedia.org/wiki/Micropenis" "penis")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Microcephaly" "cephaly")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Microtransaction" "transaction")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Microaggression_theory" "aggression")
+                          [:br]
+                          (el/link-to "http://www.surlalunefairytales.com/bookstore/europefilms.html" "Russo-Finnish Films")
+                          " (e.g., "
+                          (el/link-to "http://www.imdb.com/title/tt0058374/" "Jack")
+                          " "
+                          (el/link-to "http://mst3k.wikia.com/wiki/Jack_Frost" "Frost")
+                          ")"
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Romani_people" "Romani")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/name/nm1553725/" "Kellan")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Kellan_Lutz" "Lutz")
+                          [:br]
+                          "How much did "
+                          (el/link-to "https://en.wikipedia.org/wiki/Dan_Bilzerian" "Dan")
+                          " "
+                          (el/link-to "http://www.gq-magazine.co.uk/article/the-truth-about-dan-bilzerian" "Bilzerian")
+                          " "
+                          (el/link-to "http://www.hollywoodreporter.com/thr-esq/actor-sues-lone-survivor-producers-616876" "pay to be in this movie")
+                          "?"
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Prague" "Prague")
+                          ": a place to "
+                          (el/link-to "http://www.telegraph.co.uk/finance/jobs/11363335/The-13-best-places-in-the-world-to-work-remotely.html?frame=3174325" "work remotely")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Markup_language" "Markup languages")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Leet" "leetspeak")
+                          [:br]
+                          (el/link-to "http://www.apple.com/customer-letter/" "Apple")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/FBI%E2%80%93Apple_encryption_dispute" "encryption")
+                          " "
+                          (el/link-to "http://www.npr.org/sections/thetwo-way/2016/02/17/467096705/apple-the-fbi-and-iphone-encryption-a-look-at-whats-at-stake" "debate")
+                          [:br]
+                          (el/link-to "https://www.yikyak.com/home" "Yik Yak")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/World_War_II" "World War II")
+                          ": "
+                          (el/link-to "https://en.wikipedia.org/wiki/Total_war#World_War_II" "total war")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki" "the atomic bomb")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/The_Holocaust" "industrial scale murder")
+                          [:br]
+                          (el/link-to "http://www.theatlantic.com/magazine/archive/2016/04/the-obama-doctrine/471525/" "The Obama Doctrine")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Syrian_Civil_War" "Syrian Civil War")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Saudi_Arabia" "Saudi Arabia")
+                          ", the "
+                          (el/link-to "https://en.wikipedia.org/wiki/House_of_Saud" "House of Saud")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Wahhabism" "Wahhabism")]}
+                 {:date "2016/03/09"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 9th, 2016: Fettuccine Alfredo, Fuller House, San Andreas, and David and Goliath."
                   :food ["Fettuccine Alfredo"
