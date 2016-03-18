@@ -46,6 +46,8 @@
                           ", and "
                           (el/link-to "https://en.wikipedia.org/wiki/Microaggression_theory" "aggression")
                           [:br]
+                          (el/link-to "http://hoverhands.org/" "Hover Hands")
+                          [:br]
                           (el/link-to "http://www.surlalunefairytales.com/bookstore/europefilms.html" "Russo-Finnish Films")
                           " (e.g., "
                           (el/link-to "http://www.imdb.com/title/tt0058374/" "Jack")
@@ -54,6 +56,12 @@
                           ")"
                           [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/Romani_people" "Romani")
+                          [:br]
+                          "The "
+                          (el/link-to "http://www.feralaudio.com/show/x-files-files/" "X-Files Files")
+                          ", and a "
+                          (el/link-to "https://en.wikipedia.org/wiki/Space_(The_X-Files)" "painful episode")
+                          " (as remembered by Greg)"
                           [:br]
                           (el/link-to "http://www.imdb.com/name/nm1553725/" "Kellan")
                           " "
