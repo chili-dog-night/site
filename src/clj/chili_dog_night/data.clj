@@ -57,6 +57,14 @@
                           [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/Romani_people" "Romani")
                           [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Jean_Vigo" "Jean Vigo's")
+                          " "
+                          (el/link-to "https://www.youtube.com/watch?v=YUkW1LBuQcg" "Zero for Conduct")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Robert_Bresson" "Robert Bresson's")
+                          " "
+                          (el/link-to "https://www.youtube.com/watch?v=JToByR14Q0Y" "Au hasard Balthazar")
+                          [:br]
                           "The "
                           (el/link-to "http://www.feralaudio.com/show/x-files-files/" "X-Files Files")
                           ", and a "
