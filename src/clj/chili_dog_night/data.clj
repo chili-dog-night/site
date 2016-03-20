@@ -3,7 +3,7 @@
 
 (def gatherings [{:date "2016/03/16"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
-                  :synopsis "March 16th, 2016: Cookies, Fuller House, Pinocchio, and David and Goliath."
+                  :synopsis "March 16th, 2016: Cookies, Fuller House, Pinocchio, and Extraction."
                   :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"
                          "Pepperidge Farm Double Chocolate Milano"
                          "Pepperidge Farm Dulce de Leche Cookies"]
