@@ -1,7 +1,45 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/03/16"
+(def gatherings [{:date "2016/03/23"
+		  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "March 23rd, 2016: Cookies, Fuller House, Straw Dogs, and Persecuted."
+		  :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"
+                         "Oreo Sandwich Cookies"]
+		  :attendees ["Alex Sanchez"
+			      "Greg Ryan"
+			      "Jason Aumann"
+		 	      "Jacob Dobner"
+			      "Colin Teal"
+			      "Kaia"]
+                  :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
+                          {:title "Straw Dogs" :uri "http://www.imdb.com/title/tt0999913/"}
+                          {:title "Persecuted" :uri "http://www.imdb.com/title/tt1761005/"}]
+		  :notes [:p
+                          (el/link-to "http://www.imdb.com/name/nm0001603/" "Sam Peckinpah's")
+                          " "
+                          (el/link-to "http://www.imdb.com/title/tt0067800/" "Straw Dogs")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Battle_of_Stalingrad" "Battle of Stalingrad")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=-bzWSJG93P8&list=RD-bzWSJG93P8" "Imperial March")
+                          ", "
+                          (el/link-to "https://www.youtube.com/watch?v=8dw4APE9LmE&list=PL3ww1i4eVAAKrImVNYhdqymIaM2iuD-WB" "Dune")
+                          ", "
+                          (el/link-to "https://www.youtube.com/watch?v=L0bcRCCg01I" "Mars, the Bringer of War")
+                          " ("
+                          (el/link-to "http://tvtropes.org/pmwiki/pmwiki.php/SuspiciouslySimilarSong/Film" "suspiciously similar songs")
+                          ")"
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt2975590/" "Batman v Superman")
+                          ": "
+                          (el/link-to "http://www.rottentomatoes.com/m/batman_v_superman_dawn_of_justice/" "Dawn of Justice")
+                          " (w/ "
+                          (el/link-to "https://www.youtube.com/watch?v=cwXfv25xJUw" "Ben Affleck")
+                          ")"
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt1935859/" "Miss Peregrine's Home for Peculiar Children")]}
+		 {:date "2016/03/16"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 16th, 2016: Cookies, Fuller House, Pinocchio, and Extraction."
                   :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"
