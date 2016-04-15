@@ -1,7 +1,60 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/03/23"
+(def gatherings [{:date "2016/04/13"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "April 13th, 2016: Chili Dogs, In the Heart of the Sea, and Victor Frankenstein."
+                  :food ["Chili Dogs"
+                         "Hydrox Creme Filled Chocolage Sandwich Cookies"
+                         "Keebler Fudge Stripes Original"
+                         "Chips Ahoy Rainbow Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "In the Heart of the Sea" :uri "http://www.imdb.com/title/tt1390411/"}
+                          {:title "Victor Frankenstein" :uri "http://www.imdb.com/title/tt1976009/"}]
+                  :notes [:p
+                          (el/link-to "http://www.nytimes.com/1989/09/05/us/l-new-york-was-gotham-before-batman-829789.html" "Gotham")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Gotham_City" "Gotham City")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Metropolis_(comics)" "Metropolis")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/user/Uptomyknees" "Max Landis")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Whaling_in_the_United_States" "Whaling")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Scrimshaw" "Scrimshaw")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Tack_(sailing)" "Tacking")
+                          [:br]
+                          (el/link-to "http://q13fox.com/2016/04/12/grisly-details-revealed-in-murder-of-renton-mom-suspect-claimed-he-was-too-drunk-to-remember-prosecutors-say/" "Death and dismemberment")
+                          ", "
+                          (el/link-to "http://q13fox.com/2016/03/29/reward-up-to-13000-after-dog-named-justice-found-raped-and-killed-in-thurston-county/" "rape and murder")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Milo%C5%A1_Forman" "Miloš Forman's")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Amadeus_(film)" "Amadeus")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Flannery_O%27Connor" "Flannery O'Connor")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt4824308/" "God's Not Dead 2")
+                          " and "
+                          (el/link-to "http://www.imdb.com/title/tt4257926" "Miracles from Heaven")]}
+                 {:date "2016/04/06"
+		  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "April 6th, 2016: Jobs."
+		  :attendees ["Alex Sanchez"
+			      "Greg Ryan"
+			      "Jason Aumann"
+		 	      "Jacob Dobner"
+			      "Kaia"]
+                  :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
+                          {:title "Jobs" :uri "http://www.imdb.com/title/tt2357129/"}]}
+                 {:date "2016/03/23"
 		  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "March 23rd, 2016: Cookies, Fuller House, Straw Dogs, and Persecuted."
 		  :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"

@@ -49,11 +49,13 @@
    [:span {:itemprop "name"} name]])
 
 (defn comma-separate-str [coll]
-  (if (= (count coll) 1)
-    (first coll)
-    (str (reduce #(str % ", " %2) (drop-last coll))
-       ", and "
-       (last coll))))
+  (if (nil? coll)
+    "nothing"
+    (if (= (count coll) 1)
+      (first coll)
+      (str (reduce #(str % ", " %2) (drop-last coll))
+         ", and "
+         (last coll)))))
 
 (defn comma-separate [coll]
   (reduce into (concat
@@ -72,7 +74,8 @@
             ". They ate "
             (comma-separate-str (:food data))
             "."])
-   [:p "This is what they discussed during, and between films:"]
+   (when-not (nil? (:notes data))
+     [:p "This is what they discussed during, and between films:"])
    (:notes data)])
 
 (defn not-found []
