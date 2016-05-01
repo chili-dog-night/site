@@ -1,7 +1,41 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/04/13"
+(def gatherings [{:date "2016/04/20"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "April 20th, 2016: Fuller House, Litle Boy, and Misconduct."
+                  :food ["Keelber Jif Peanut Butter Cookies"
+                         "Keebler Fudge Stripes Original"
+                         "Keelber Chips Deluxe Rainbow Chocolate Chip Cookies with M&M Chocolate Candies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
+                          {:title "Little Boy" :uri "http://www.imdb.com/title/tt1810683/"}
+                          {:title "Misconduct" :uri "http://www.imdb.com/title/tt3658772/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Unbreakable_Kimmy_Schmidt" "Unbreakable Kimmy Schmidt")
+                          " ("
+                          (el/link-to "http://www.imdb.com/title/tt3339966/episodes?season=2" "Season Two")
+                          " )"
+                          [:br]
+                          (el/link-to "http://www.imdb.com/name/nm0001650/" "Michael Rapaport")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans" "Japanese Internment")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Little_Boy" "Little Boy"),
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Fat_Man" "Fat Man")
+                          ", and the "
+                          (el/link-to "https://en.wikipedia.org/wiki/Enola_Gay" "Enola Gay")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/name/nm0241049/" "Josh Duhamel")
+                          " and "
+                          (el/link-to "http://www.imdb.com/title/tt2879552/" "11.22.63")]}
+                 {:date "2016/04/13"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "April 13th, 2016: Chili Dogs, In the Heart of the Sea, and Victor Frankenstein."
                   :food ["Chili Dogs"
@@ -45,8 +79,8 @@
                           " and "
                           (el/link-to "http://www.imdb.com/title/tt4257926" "Miracles from Heaven")]}
                  {:date "2016/04/06"
-		  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
-                  :synopsis "April 6th, 2016: Jobs."
+		  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "April 6th, 2016: Fuller House, and Jobs."
 		  :attendees ["Alex Sanchez"
 			      "Greg Ryan"
 			      "Jason Aumann"
