@@ -1,7 +1,60 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/04/20"
+(def gatherings [{:date "2016/05/04"
+                  :address "9226 1st Ave NW, Seattle, WA 98117, USA",
+                  :synopsis "May 4th, 2016: Hot Dogs, The 5th Wave, and The Choice."
+                  :food ["Hebrew National Hot Dogs"
+                         "Original Hawaiian Sweet Hot Dog Buns"
+                         "Keebler Fudge Stripes Original"
+                         "Keelber Chips Deluxe Chocolate Lovers Cookies"
+                         "Doritos Mix Cheese Explosion Chips"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :media [{:title "The 5th Wave" :uri "http://www.imdb.com/title/tt2304933/"}
+                          {:title "The Choice" :uri "http://www.imdb.com/title/tt3797868/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Adult" "Adulthood")
+                          [:br]
+                          (el/link-to "http://www.seattletimes.com/business/real-estate/home-prices-charge-ahead-driving-some-buyers-farther-afield/" "Seattle's")
+                          " "
+                          (el/link-to "http://www.seattletimes.com/business/real-estate/seattle-home-prices-outpace-us-rise-but-gains-slowing/" "Housing")
+                          " "
+                          (el/link-to "http://www.wsj.com/articles/in-silicon-seattle-high-home-prices-1461163535" "Market")
+                          [:br]
+                          (el/link-to "https://www.washingtonpost.com/national/health-science/adult-coloring-books-are-not-just-a-fad-for-some-they-are-a-lifesaver/2016/05/02/47449320-f8c2-11e5-a3ce-f06b5ba21f33_story.html" "Coloring Books")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Homelessness_in_Seattle" "Homelessness")
+                          " "
+                          (el/link-to "http://www.nytimes.com/2016/05/04/us/seattle-tech-boom-amazon-homelessness.html" "in")
+                          " "
+                          (el/link-to "http://time.com/4297797/amazon-homeless-shelter-seattle/" "Seattle")
+                          [:br]
+                          (el/link-to "http://www.kingshawaiian.com/products/hotdog-buns/" "\"These are the buns everyone has been asking for!\"")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Captain_America:_Civil_War" "Civil War")
+                          " (no, not "
+                          (el/link-to "https://en.wikipedia.org/wiki/American_Civil_War" "that one")
+                          ", or the "
+                          (el/link-to "https://en.wikipedia.org/wiki/Syrian_Civil_War" "other one")
+                          " from recent memory)"
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Young_adult_fiction" "Young Adult Fiction")
+                          [:br]
+                          (el/link-to "http://www.theguardian.com/us-news/2016/apr/22/us-suicide-rate-30-year-high-growing-epidemic-across-america" "Suicide")
+                          [:br]
+                          (el/link-to "https://youtu.be/Q8XSARX3DQg" "Green Room")
+                          [:br]
+                          (el/link-to "https://youtu.be/QWr3mLI8Xl8" "Pride and Prejudice and Zombies")
+                          [:br]
+                          (el/link-to "http://www.rollingstone.com/politics/news/ted-cruz-will-die-so-that-you-may-live-20160504" "Ted")
+                          " "
+                          (el/link-to "http://www.theguardian.com/media/2016/may/04/ted-cruz-campaign-social-media-memes-zodiac-killer" "Cruz")
+                          ": "
+                          (el/link-to "http://www.politico.com/story/2016/04/john-beohner-ted-cruz-lucifer-222570" "\"Lucifer in the flesh\"")]}
+                 {:date "2016/04/20"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "April 20th, 2016: Fuller House, Litle Boy, and Misconduct."
                   :food ["Keelber Jif Peanut Butter Cookies"
@@ -79,30 +132,30 @@
                           " and "
                           (el/link-to "http://www.imdb.com/title/tt4257926" "Miracles from Heaven")]}
                  {:date "2016/04/06"
-		  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "April 6th, 2016: Fuller House, and Jobs."
-		  :attendees ["Alex Sanchez"
-			      "Greg Ryan"
-			      "Jason Aumann"
-		 	      "Jacob Dobner"
-			      "Kaia"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Kaia"]
                   :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
                           {:title "Jobs" :uri "http://www.imdb.com/title/tt2357129/"}]}
                  {:date "2016/03/23"
-		  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "March 23rd, 2016: Cookies, Fuller House, Straw Dogs, and Persecuted."
-		  :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"
+                  :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"
                          "Oreo Sandwich Cookies"]
-		  :attendees ["Alex Sanchez"
-			      "Greg Ryan"
-			      "Jason Aumann"
-		 	      "Jacob Dobner"
-			      "Colin Teal"
-			      "Kaia"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
                   :media [{:title "Fuller House" :uri "http://www.imdb.com/title/tt3986586/"}
                           {:title "Straw Dogs" :uri "http://www.imdb.com/title/tt0999913/"}
                           {:title "Persecuted" :uri "http://www.imdb.com/title/tt1761005/"}]
-		  :notes [:p
+                  :notes [:p
                           (el/link-to "http://www.imdb.com/name/nm0001603/" "Sam Peckinpah's")
                           " "
                           (el/link-to "http://www.imdb.com/title/tt0067800/" "Straw Dogs")
@@ -126,7 +179,7 @@
                           ")"
                           [:br]
                           (el/link-to "http://www.imdb.com/title/tt1935859/" "Miss Peregrine's Home for Peculiar Children")]}
-		 {:date "2016/03/16"
+                 {:date "2016/03/16"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 16th, 2016: Cookies, Fuller House, Pinocchio, and Extraction."
                   :food ["Hydrox Creme Filled Chocolate Sandwich Cookies"
