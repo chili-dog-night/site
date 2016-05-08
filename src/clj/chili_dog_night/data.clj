@@ -7,7 +7,7 @@
                   :food ["Hebrew National Hot Dogs"
                          "Original Hawaiian Sweet Hot Dog Buns"
                          "Keebler Fudge Stripes Original"
-                         "Keelber Chips Deluxe Chocolate Lovers Cookies"
+                         "Keebler Chips Deluxe Chocolate Lovers Cookies"
                          "Doritos Mix Cheese Explosion Chips"]
                   :attendees ["Alex Sanchez"
                               "Jason Aumann"
