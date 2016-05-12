@@ -4,7 +4,8 @@
 (def gatherings [{:date "2016/05/11"
                   :address "9226 1st Ave NW, Seattle, WA 98117, USA",
                   :synopsis "May 11th, 2016: Chili, Missed Call, Point Break, and Ratter."
-                  :food ["Pirate's Booty Aged White Cheddar"
+                  :food ["Homemade Turkey Chili"
+                         "Pirate's Booty Aged White Cheddar"
                          "Dessert Shop Mint Chocolate Brownie Cookies"
                          "Double Chocolate Nantucket Dark Chocolate Cookies"]
                   :attendees ["Alex Sanchez"
