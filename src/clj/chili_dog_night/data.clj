@@ -1,7 +1,61 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/05/04"
+(def gatherings [{:date "2016/05/11"
+                  :address "9226 1st Ave NW, Seattle, WA 98117, USA",
+                  :synopsis "May 11th, 2016: Chili, Missed Call, Point Break, and Ratter."
+                  :food ["Pirate's Booty Aged White Cheddar"
+                         "Dessert Shop Mint Chocolate Brownie Cookies"
+                         "Double Chocolate Nantucket Dark Chocolate Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Katie Sauro"
+                              "Colin Teal"]
+                  :media [{:title "Missed Call" :uri "http://www.imdb.com/title/tt4125752/"}
+                          {:title "Point Break" :uri "http://www.imdb.com/title/tt2058673/"}
+                          {:title "Ratter" :uri "http://www.imdb.com/title/tt3836512/"}]
+                  :notes [:p
+                          (el/link-to "http://www.bloomberg.com/politics/articles/2016-05-04/gop-establishment-nightmare-ted-cruz-2020" "2020")
+                          [:br]
+                          (el/link-to "http://www.pokeylafarge.net/" "Pokey Lafarge")
+                          " and "
+                          (el/link-to "http://www.thecactusblossoms.com/music.html" "The Cactus Blossoms")
+                          [:br]
+                          "The unique simplicity of "
+                          (el/link-to "https://en.wikipedia.org/wiki/Seinfeld" "Seinfeld")
+                          ", and its modern analogue "
+                          (el/link-to "https://en.wikipedia.org/wiki/It%27s_Always_Sunny_in_Philadelphia" "It's Always Sunny in Philadelphia")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Brad_Bird" "Brad Bird")
+                          [:br]
+                          (el/link-to "http://www.modernlibrary.com/top-100/100-best-nonfiction/" "The Reader's List")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt0102685/" "Point Break")
+                          [:br]
+                          (el/link-to "http://www.junkiexl.com/" "Junkie XL")
+                          ", "
+                          (el/link-to "http://www.hans-zimmer.com/" "Hans Zimmer")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/James_Horner" "James Horner")
+                          [:br]
+                          (el/link-to "https://youtu.be/qerpkmHGvuE" "Vice")
+                          " "
+                          (el/link-to "https://youtu.be/bPs33txZ5G0" "Principals")
+                          " from "
+                          (el/link-to "https://en.wikipedia.org/wiki/Jody_Hill" "Jody Hill")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Turn:_Washington%27s_Spies" "Turn: Washington's Spies")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/One-drop_rule" "One-drop rule")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Jupiter_Ascending" "Jupiter Ascending")
+                          ", or perhaps more accurately "
+                          (el/link-to "http://www.rottentomatoes.com/m/jupiter_ascending_2014/" "descending")
+                          [:br]
+                          (el/link-to "http://searchsecurity.techtarget.com/definition/RAT-remote-access-Trojan" "Remote Access Trojan")]}
+                 {:date "2016/05/04"
                   :address "9226 1st Ave NW, Seattle, WA 98117, USA",
                   :synopsis "May 4th, 2016: Hot Dogs, The 5th Wave, and The Choice."
                   :food ["Hebrew National Hot Dogs"
