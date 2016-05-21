@@ -64,9 +64,18 @@
    {:margin-top "2em"
     :text-align "center"}])
 
+(defstyles forms
+  [:form
+   [:div
+    {:padding-top ".25em"
+     :padding-bottom ".25em"}]
+   [:button
+    {:margin-top "2.5em"}]])
+
 (defstyles screen
   normalize
   layout
   typography
   header
-  footer)
+  footer
+  forms)
