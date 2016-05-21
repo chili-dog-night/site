@@ -1,7 +1,69 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/05/11"
+(def gatherings [{:date "2016/05/18"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "May 18th, 2016: Chili Dogts, We Are Your Friends, and Ride."
+                  :food ["Chili Dogs"
+                         "Oreo Triple Double Chocolate Sandwich Cookies"
+                         "Peanut M&M's"
+                         "Chips Ahoy! Original Chocolate Chip Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Michael Adams"
+                              "Colin Teal"]
+                  :media [{:title "We Are Your Friends" :uri "http://www.imdb.com/title/tt3787590/"}
+                          {:title "Ride" :uri "http://www.imdb.com/title/tt1930463/"}]
+                  :notes [:p
+                          (el/link-to "http://www.imdb.com/title/tt0298814/" "The Core")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/DJ_Qualls" "Donald Joseph Qualls")
+                          [:br]
+                          (el/link-to "http://www.dailymail.co.uk/news/article-2745169/Zombie-chic-Indonesian-village-Toraja-s-bizarre-annual-ritual-Ceremony-Cleaning-Corpses-MaiNene.html" "Ma'nene")
+                          ", or the "
+                          (el/link-to "https://www.youtube.com/watch?v=CGlLs3Rnwg4" "Ceremony of Cleaning Corpses")
+                          " (via "
+                          (el/link-to "https://www.instagram.com/p/BFTEHxyIVaU/?taken-by=natgeo" "National Geographic")
+                          ")"
+                          [:br]
+                          "The global ambition of action remakes, e.g. "
+                          (el/link-to "http://www.imdb.com/title/tt1234721/" "Robocop")
+                          ", "
+                          (el/link-to "http://www.imdb.com/title/tt2058673/" "Point Break")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt2545118/" "Blackfish")
+                          ", and "
+                          (el/link-to "http://www.imdb.com/title/tt1313104/" "The Cove")
+                          [:br]
+                          (el/link-to "https://youtu.be/8361stZ8n0w" "Foxcatcher")
+                          ", "
+                          (el/link-to "https://www.youtube.com/watch?v=WZczesrBFRA" "Team Foxcatcher")
+                          ", and "
+                          (el/link-to "http://espn.go.com/30for30/film?page=theprinceofpennsylvania" "The Prince of Pennsylvania")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/San_Fernando_Valley" "San Fernando Valley")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/French_house" "French house")
+                          ", and other "
+                          (el/link-to "https://en.wikipedia.org/wiki/Phencyclidine" "drugs")
+                          [:br]
+                          "\"We'll always have "
+                          (el/link-to "https://en.wikipedia.org/wiki/Paris_Las_Vegas" "the Paris")
+                          "\""
+                          [:br]
+                          (el/link-to "https://www.caesars.com/caesars-palace/restaurants/bacchanal-buffet" "Bacchanal")
+                          [:br]
+                          (el/link-to "http://www.nytimes.com/2016/05/14/us/us-will-step-up-deportations-focusing-on-central-americans.html" "Obama escalates deportations")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Luke_Wilson" "Luke Wilson")
+                          [:br]
+                          (el/link-to "http://www.newyorker.com/" "The New Yorker")
+                          ": "
+                          (el/link-to "http://laist.com/2016/05/17/la_times_music_critic_out_after_500.php" "Sasha Frere-Jones")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/David_Remnick" "David Remnick")]}
+                 {:date "2016/05/11"
                   :address "9226 1st Ave NW, Seattle, WA 98117, USA",
                   :synopsis "May 11th, 2016: Chili, Missed Call, Point Break, and Ratter."
                   :food ["Homemade Turkey Chili"
