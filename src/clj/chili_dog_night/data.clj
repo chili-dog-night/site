@@ -3,7 +3,7 @@
 
 (def gatherings [{:date "2016/05/18"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
-                  :synopsis "May 18th, 2016: Chili Dogts, We Are Your Friends, and Ride."
+                  :synopsis "May 18th, 2016: Chili Dogs, We Are Your Friends, and Ride."
                   :food ["Chili Dogs"
                          "Oreo Triple Double Chocolate Sandwich Cookies"
                          "Peanut M&M's"
