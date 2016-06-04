@@ -1,7 +1,56 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/05/18"
+(def gatherings [{:date "2016/06/01"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "June 1st, 2016: The Do-Over, and Gods of Egypt."
+                  :food ["Keebler Jif Peanut Butter Cookies"
+                         "Keebler Chips Deluxe Rainbow Chocolate Chip Cookies with M&Ms"
+                         "Keebler Fudge Stripes Original Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "The Do-Over" :uri "http://www.imdb.com/title/tt4769836/"}
+                          {:title "Gods of Egypt" :uri "http://www.imdb.com/title/tt2967224/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Haller_Lake,_Seattle" "Haller Lake")
+                          [:br]
+                          (el/link-to "https://answers.yahoo.com/question/index?qid=20110622150204AAyy7B5" "What's that smell?")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt3799694/" "The Nice Guys")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/David_Spade" "David Spade")
+                          [:br]
+                          (el/link-to "http://www.salon.com/2016/06/03/the_end_of_hollywood_alice_through_the_looking_glass_is_yet_another_big_budget_flop_and_that_could_mean_a_disastrous_year_for_studios/" "Alice Through the Looking Glass")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt0360486/" "Constantine")
+                          " with "
+                          (el/link-to "https://en.wikipedia.org/wiki/Gavin_Rossdale" "Gavin Rossdale")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Maria_Bamford" "Maria Bamford's")
+                          " "
+                          (el/link-to "https://www.netflix.com/title/80046193" "Lady Dynamite")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt2306299/" "Vikings")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=2Rxoz13Bthc" "Warcraft")
+                          " (not "
+                          (el/link-to "http://us.battle.net/wow/en/" "that")
+                          " one)"]}
+                 {:date "2016/05/25"
+                  :address "94th Ave NE, Bothell, WA 98011, USA",
+                  :synopsis "May 25th, 2016: Pizza, Kindergarten Cop 2, and Hot Pursuit."
+                  :food ["Papa John's Pizza"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"]
+                  :media [{:title "Kindergarten Cop 2" :uri "http://www.imdb.com/title/tt4763168/"}
+                          {:title "Hot Pursuit" :uri "http://www.imdb.com/title/tt2967224/"}]}
+                 {:date "2016/05/18"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "May 18th, 2016: Chili Dogs, We Are Your Friends, and Ride."
                   :food ["Chili Dogs"
