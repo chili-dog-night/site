@@ -24,6 +24,12 @@
                           [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/David_Spade" "David Spade")
                           [:br]
+                          (el/link-to "http://www.thewrap.com/johnny-depp-is-being-blackmailed-by-amber-heard-heres-how-i-know-guest-column/" "Amber Heard")
+                          ", "
+                          (el/link-to "http://gawker.com/leaked-texts-reveal-more-than-just-specific-details-of-1780357241" "Johnny Depp")
+                          ", "
+                          (el/link-to "http://www.people.com/article/johnny-depp-kate-moss-amber-heard-relationship" "Kate Moss")
+                          ", and "
                           (el/link-to "http://www.salon.com/2016/06/03/the_end_of_hollywood_alice_through_the_looking_glass_is_yet_another_big_budget_flop_and_that_could_mean_a_disastrous_year_for_studios/" "Alice Through the Looking Glass")
                           [:br]
                           (el/link-to "http://www.imdb.com/title/tt0360486/" "Constantine")
