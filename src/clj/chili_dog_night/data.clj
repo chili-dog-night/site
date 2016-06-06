@@ -24,6 +24,10 @@
                           [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/David_Spade" "David Spade")
                           [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Natasha_Leggero" "Natasha Leggero's")
+                          " "
+                          (el/link-to "https://www.youtube.com/playlist?list=PLmLMM7D7XLUX8EIwf33eqGuH5aeDPdG3I" "Tubbin' With Tash")
+                          [:br]
                           (el/link-to "http://www.thewrap.com/johnny-depp-is-being-blackmailed-by-amber-heard-heres-how-i-know-guest-column/" "Amber Heard")
                           ", "
                           (el/link-to "http://gawker.com/leaked-texts-reveal-more-than-just-specific-details-of-1780357241" "Johnny Depp")
@@ -35,6 +39,12 @@
                           (el/link-to "http://www.imdb.com/title/tt0360486/" "Constantine")
                           " with "
                           (el/link-to "https://en.wikipedia.org/wiki/Gavin_Rossdale" "Gavin Rossdale")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Vin_Diesel" "Vin Diesel")
+                          ", "
+                          (el/link-to "http://www.imdb.com/title/tt1618442/trivia?item=tr2649340" "Melkor")
+                          ", and the "
+                          (el/link-to "https://en.wikipedia.org/wiki/Peter_principle" "Peter principle")
                           [:br]
                           (el/link-to "https://en.wikipedia.org/wiki/Maria_Bamford" "Maria Bamford's")
                           " "
