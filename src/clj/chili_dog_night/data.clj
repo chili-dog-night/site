@@ -14,7 +14,7 @@
                               "Colin Teal"
                               "Kaia"]
                   :media [{:title "The Do-Over" :uri "http://www.imdb.com/title/tt4769836/"}
-                          {:title "Gods of Egypt" :uri "http://www.imdb.com/title/tt2967224/"}]
+                          {:title "Gods of Egypt" :uri "http://www.imdb.com/title/tt2404233/"}]
                   :notes [:p
                           (el/link-to "https://en.wikipedia.org/wiki/Haller_Lake,_Seattle" "Haller Lake")
                           [:br]
