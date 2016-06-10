@@ -1,7 +1,49 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/06/01"
+(def gatherings [{:date "2016/06/08"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "June 8th, 2016: Christian Mingle, and Playing for Keeps."
+                  :food ["Keebler E.L. Fudge Original Cookies"
+                         "Keebler Chips Deluxe Rainbow Chocolate Chip Cookies with M&Ms"
+                         "Keebler Fudge Stripes Original Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Christian Mingle" :uri "http://www.imdb.com/title/tt3398066/"}
+                          {:title "Playing for Keeps" :uri "http://www.imdb.com/title/tt1540128/"}]
+                  :notes [:p
+                          (el/link-to "https://www.amazon.com/b?node=10667898011" "Amazon Dash Button")
+                          [:br]
+                          (el/link-to "https://www.jdate.com/" "JDate")
+                          " and "
+                          (el/link-to "https://www.christianmingle.com/" "Christian Mingle")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Stephen_Tobolowsky" "Stephen Tobolowsky")
+                          [:br]
+                          (el/link-to "https://www.buzzfeed.com/katiejmbaker/heres-the-powerful-letter-the-stanford-victim-read-to-her-ra?utm_term=.wslE7NlJr#.ecLyx6RvV" "Brock")
+                          " "
+                          (el/link-to "http://heavy.com/news/2016/06/brock-turner-father-dad-dan-turner-full-letter-statement-stanford-rapist/" "Turner")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/name/nm0339460/" "Judy Greer")
+                          " and "
+                          (el/link-to "http://www.imdb.com/name/nm0000235/" "Uma Thurman")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Real_World:_Seattle_(2016)" "Real World: Seattle")
+                          [:br]
+                          (el/link-to "https://youtu.be/ZfmNfoNrkIE" "Blurred Lines")
+                          ", or "
+                          (el/link-to "https://en.wikipedia.org/wiki/Music_plagiarism" "Infringement")
+                          ": "
+                          (el/link-to "https://en.wikipedia.org/wiki/Robin_Thicke" "Robin Thicke")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Pharrell_Williams" "Pharrell Williams")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Sam_Smith_(singer)" "Sam Smith")]}
+                 {:date "2016/06/01"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "June 1st, 2016: The Do-Over, and Gods of Egypt."
                   :food ["Keebler Jif Peanut Butter Cookies"
