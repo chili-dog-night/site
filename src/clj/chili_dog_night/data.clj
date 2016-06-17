@@ -1,7 +1,72 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/06/08"
+(def gatherings [{:date "2016/06/15"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "June 15th, 2016: Chili Dogs, Girl Meets World, Get a Job, and Big Fat Liar."
+                  :food ["Chili Dogs"
+                         "Pringles Jalapeño"
+                         "Keebler E.L. Fudge Original Cookies"
+                         "Keebler Jif Peanut Butter Cookies"
+                         "Keebler Fudge Stripes Original Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Girl Meets World" :uri "http://www.imdb.com/title/tt2543796/"}
+                          {:title "Get a Job" :uri "http://www.imdb.com/title/tt1468846/"}
+                          {:title "Big Fat Liar" :uri "http://www.imdb.com/title/tt0265298/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Electronic_Entertainment_Expo_2016" "E3")
+                          ": "
+                          (el/link-to "http://www.ign.com/wikis/playstation-4/PS4_vs_PlayStation_NEO_Comparison_Chart" "NEO")
+                          ", "
+                          (el/link-to "http://www.theverge.com/2016/6/13/11890842/microsoft-xbox-project-scorpio-virtual-reality-e3-2016" "Scorpio")
+                          ", and "
+                          (el/link-to "https://www.youtube.com/watch?v=Ze05xdORvYs" "The Legend of Zelda: Breath of the Wild")
+                          [:br]
+                          (el/link-to "https://storify.com/case_face/a-trump-rally-in-greensboro-anger-in-here-is-palpa" "Trump 2016")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/AR-15" "AR-15")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting" "Orlando")
+                          " and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Sandy_Hook_Elementary_School_shooting" "Sandy Hook")
+                          [:br]
+                          (el/link-to "http://www.0s-1s.com/neujorker/" "The Neu Jorker")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Marc_Maron" "Marc Maron")
+                          [:br]
+                          "Do you even "
+                          (el/link-to "https://youtu.be/36PNDDiRNMs" "smoke")
+                          "?"
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Anna_Kendrick" "Anna Kendrick")
+                          " vs. "
+                          (el/link-to "https://en.wikipedia.org/wiki/Alison_Brie" "Alison Brie")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Frankie_Muniz" "Frankie")
+                          " "
+                          (el/link-to "https://twitter.com/brendohare/status/711756445717495808" "Muniz")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Amanda_Bynes" "Amanda")
+                          " "
+                          (el/link-to "http://www.people.com/article/amanda-bynes-30th-birthday-healthier-lifestyle" "Bynes")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Paul_Giamatti" "Paul")
+                          " "
+                          (el/link-to "http://villains.wikia.com/wiki/Marty_Wolf" "Giamatti")
+                          [:br]
+                          (el/link-to "https://youtu.be/mb1DcB-zGSU" "Wrangler")
+                          " and "
+                          (el/link-to "https://www.youtube.com/watch?v=BfR5O2PXzfc" "America's Got Talent")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Astralwerks" "Astralwerks")
+                          ", "
+                          (el/link-to "http://www.aircheology.com/" "Air")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/The_Smiths" "The Smiths")]}
+                 {:date "2016/06/08"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "June 8th, 2016: Christian Mingle, and Playing for Keeps."
                   :food ["Keebler E.L. Fudge Original Cookies"
