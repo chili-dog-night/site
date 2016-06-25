@@ -1,7 +1,49 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/06/15"
+(def gatherings [{:date "2016/06/22"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "June 22nd, 2016: Girl Meets World, The Giver, and Guy's Grocery Games."
+                  :food ["Pringles Pizza"
+                         "Trader Joe's Ghost Pepper Potato Chips"
+                         "Keebler Grasshopper Cookies"
+                         "Keebler Fudge Stripes Original Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Girl Meets World" :uri "http://www.imdb.com/title/tt2543796/"}
+                          {:title "The Giver" :uri "http://www.imdb.com/title/tt0435651/"}
+                          {:title "Guy's Grocery Games" :uri "http://www.imdb.com/title/tt3165150/"}]
+                  :notes [:p
+                          (el/link-to "http://vignette4.wikia.nocookie.net/girlmeetsworld/images/1/10/Yearbook13.jpg/revision/latest?cb=20150729011804" "Goth Meets World")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=UL_EXAyGCkw" "Geronimo")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Tim_%26_Eric%27s_Bedtime_Stories" "Bedtime Stories")
+                          [:br]
+                          (el/link-to "http://www.dreamingwithjeff.com/" "Sleeping Tapes")
+                          [:br]
+                          (el/link-to "http://knowyourmeme.com/memes/people/taylor-swift" "Taylor")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Taylor_Swift" "Swift")
+                          " "
+                          (el/link-to "https://www.google.com/search?q=taylor+swift+backlash" "backlash")
+                          [:br]
+                          (el/link-to "http://ihatethisswampcalledhouston.blogspot.com/" "Houston")
+                          [:br]
+                          "The "
+                          (el/link-to "http://www.nytimes.com/1981/07/11/movies/robert-altman-sells-studio-for-2.3-million.html" "sale")
+                          " of "
+                          (el/link-to "https://en.wikipedia.org/wiki/Robert_Altman" "Altman's")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Lionsgate" "Lionsgate")
+                          [:br]
+                          (el/link-to "http://ihateseattle.com/" "Seattle")
+                          [:br]
+                          (el/link-to "http://www.almanac.com/content/strawberry-moon-june-full-moon-phases-2016" "Strawberry Moon")]}
+                 {:date "2016/06/15"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "June 15th, 2016: Chili Dogs, Girl Meets World, Get a Job, and Big Fat Liar."
                   :food ["Chili Dogs"
