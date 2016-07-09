@@ -2,23 +2,23 @@
  :resource-paths #{"resources"}
  :source-paths #{"src/clj" "src/cljs"}
  :dependencies '[[adzerk/boot-cljs "1.7.228-1"]
-                 [adzerk/boot-reload "0.4.5"]
+                 [adzerk/boot-reload "0.4.11"]
                  [pandeiro/boot-http "0.7.3"]
                  [org.martinklepsch/boot-garden "1.3.0-0"]
-                 [ring "1.4.0"]
+                 [ring "1.5.0"]
                  [amalloy/ring-gzip-middleware "0.1.3"]
-                 [compojure "1.4.0"]
+                 [compojure "1.5.1"]
                  [hiccup "1.0.5"]
                  [clj-rss "0.2.3"]
-                 [clj-time "0.11.0"]
+                 [clj-time "0.12.0"]
                  [java-jdbc/dsl "0.1.3"]
-                 [buddy/buddy-auth "0.9.0"]
+                 [buddy/buddy-auth "1.1.0"]
                  [org.postgresql/postgresql "9.4.1208"]
                  [org.omcljs/om "1.0.0-alpha28"]
-                 [org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.7.228"]
-                 [org.clojure/core.async "0.2.371"]
-                 [org.clojure/java.jdbc "0.4.2"]
+                 [org.clojure/clojure "1.9.0-alpha9"]
+                 [org.clojure/clojurescript "1.9.89"]
+                 [org.clojure/core.async "0.2.385"]
+                 [org.clojure/java.jdbc "0.6.2-alpha1"]
                  [org.clojure/math.numeric-tower "0.0.4"]])
 
 (require
