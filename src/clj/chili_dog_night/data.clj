@@ -1,7 +1,77 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/06/22"
+(def gatherings [{:date "2016/07/06"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "July 6th, 2016: Girl Meets World, The Scorch Trials, and Heaven's Door."
+                  :food ["Lay's Flavor Mix Variety Pack"
+                         "Keebler E.L. Fudge Original Cookies"
+                         "Keebler Chips Deluxe Rainbow Chocolate Chip Cookies with M&Ms"
+                         "Keebler Fudge Stripes Original Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Girl Meets World" :uri "http://www.imdb.com/title/tt2543796/"}
+                          {:title "The Scorch Trials" :uri "http://www.imdb.com/title/tt4046784/"}
+                          {:title "Heaven's Door" :uri "http://www.imdb.com/title/tt2321269/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Star_Ocean:_Integrity_and_Faithlessness" "Star Ocean")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_The_Phantom_Pain" "The Phantom Pain")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" "Wild Hunt")
+                          [:br]
+                          (el/link-to "http://www.uefa.com/uefaeuro/season=2016/teams/team=47/index.html" "Germany")
+                          " vs. "
+                          (el/link-to "http://www.uefa.com/uefaeuro/season=2016/teams/team=43/index.html" "France")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Feudalism" "Feudalism")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Serfdom" "Serfdom")
+                          [:br]
+                          (el/link-to "http://www.seattletimes.com/business/this-mold-house-decaying-home-too-dangerous-to-enter-sparks-insane-bidding/" "West Seattle teardown")
+                          " and "
+                          (el/link-to "http://www.seattletimes.com/business/seattles-devilish-new-home-price-record-666000/" "Satan's housing market")
+                          [:br]
+                          (el/link-to "http://www.gustavus.com/heidi/scrim.html" "Scrimshaw")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Petyr_Baelish" "Lord Baelish")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Steven_Spielberg" "Spielberg")
+                          ": "
+                          (el/link-to "http://www.imdb.com/title/tt0107290/" "Jurassic Park")
+                          ", "
+                          (el/link-to "http://www.imdb.com/title/tt0083866/" "E.T.")
+                          ", "
+                          (el/link-to "http://www.imdb.com/title/tt0983193/" "The Adventures of Tintin")
+                          ", and "
+                          (el/link-to "http://www.imdb.com/title/tt3691740/" "The B.F.G")
+                          [:br]
+                          (el/link-to "http://www.imdb.com/title/tt0401729/" "John Carter")
+                          [:br]
+                          (el/link-to "https://www.christianmingle.com/" "Christian")
+                          " "
+                          (el/link-to "http://www.relevantmagazine.com/life/whole-life/why-arent-christians-funny" "humor")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Religiosity_and_intelligence" "intelligence")
+                          [:br]
+                          "\""
+                          (el/link-to "https://www.youtube.com/watch?v=S_OTz-lpDjw" "God's not dead he's surely alive...")
+                          "\""]}
+                 {:date "2016/06/29"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "June 29th, 2016: A Matter of Faith, and Agent Cody Banks: Destination London."
+                  :attendees ["Alex Sanchez"
+                              "Jacob Dobner"
+                              "Jason Aumann"
+                              "Matt Beck"
+                              "Kaia"]
+                  :media [{:title "A Matter of Faith" :uri "http://www.imdb.com/title/tt0358349/"}
+                          {:title "Agent Cody Banks: Destination London" :uri "http://www.imdb.com/title/tt2587914/"}]}
+                 {:date "2016/06/22"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "June 22nd, 2016: Girl Meets World, The Giver, and Guy's Grocery Games."
                   :food ["Pringles Pizza"
