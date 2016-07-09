@@ -60,7 +60,7 @@
 (defn comma-separate [coll]
   (reduce into (concat
                 (map #(vec [% ", "])
-                     (drop-last 2 coll)) 
+                     (drop-last 2 coll))
                 (reduce #(vec [[ % ", and "] [%2]])
                         (take-last 2 coll)))))
 
