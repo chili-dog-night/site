@@ -1,7 +1,18 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/07/06"
+(def gatherings [{:date "2016/07/13"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "July 13th, 2016: Chili Dogs, London Has Fallen, and Miracles from Heaven."
+                  :food ["Chili Dogs"]
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Kaia"]
+                  :media [{:title "London Has Fallen" :uri "http://www.imdb.com/title/tt3300542/"}
+                          {:title "Miracles from Heaven" :uri "http://www.imdb.com/title/tt4257926/"}]}
+                 {:date "2016/07/06"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "July 6th, 2016: Girl Meets World, The Scorch Trials, and Heaven's Door."
                   :food ["Lay's Flavor Mix Variety Pack"
