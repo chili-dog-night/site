@@ -1,7 +1,46 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/07/13"
+(def gatherings [{:date "2016/07/20"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
+                  :synopsis "July 20th, 2016: 13 Hours, and How to Be Single."
+                  :food ["Choco Chip Oreo Cookies"
+                         "Klondike Cookie Dough Swirl"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "13 Hours" :uri "http://www.imdb.com/title/tt4172430/"}
+                          {:title "How to Be Single" :uri "http://www.imdb.com/title/tt1292566/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/2016_Republican_National_Convention" "The Republican National Convention")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Mike_Pence" "Mike Pence")
+                          ", and "
+                          (el/link-to "http://www.nytimes.com/2016/07/23/us/politics/rnc-ratings-trump.html" "who cares")
+                          "?"
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Stranger_Things_(TV_series)" "Stranger Things")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Garry_Marshall" "Garry Marshall")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/The_Divergent_Series:_Allegiant" "Allegiant")
+                          " part two "
+                          (el/link-to "http://variety.com/2016/film/news/divergent-series-ascendant-1201818694/" "ascends the cinema")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/2012_Benghazi_attack" "Benghazi")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Jason_Mantzoukas" "Jason Mantzoukas")
+                          ", "
+                          (el/link-to "http://www.earwolf.com/show/how-did-this-get-made/" "How Did This Get Made?")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/The_League" "The League")
+                          [:br]
+                          (el/link-to "http://www.esri.com/products/maps-we-love/death-grand-canyon" "Death in the Grand Canyon")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/The_Invitation_(2015_film)" "The Invitation")]}
+                 {:date "2016/07/13"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "July 13th, 2016: Chili Dogs, London Has Fallen, and Miracles from Heaven."
                   :food ["Chili Dogs"]
