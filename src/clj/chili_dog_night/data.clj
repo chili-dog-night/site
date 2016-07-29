@@ -1,7 +1,47 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/07/20"
+(def gatherings [{:date "2016/07/27"
+                  :address "12283 Densmore Ave N, Seattle, WA 98133, USA",
+                  :synopsis "July 27th, 2016: I Am Wrath, and Allegiant."
+                  :food ["Little Caesars Cheese Pizza"
+                         "Little Caesars Pepperoni Pizza"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "I Am Wrath" :uri "http://www.imdb.com/title/tt3212232/"}
+                          {:title "Allegiant" :uri "http://www.imdb.com/title/tt3410834/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Solipsism" "Solipsism")
+                          ", "
+                          (el/link-to "http://www.zoo.org/zootunes" "Zoo Tunes")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/%22Weird_Al%22_Yankovic" "Weird Al")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=qQVlGrwG9yo" "Monster Factory")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Vice_Principals" "Vice Principals")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Review_(TV_series)" "Review")
+                          " w/"
+                          (el/link-to "https://en.wikipedia.org/wiki/Andy_Daly" "Andy Daly")
+                          " courtesy of "
+                          (el/link-to "https://www.google.com/search?q=insufferable+hulu+ads" "Hulu")
+                          [:br]
+                          "Being "
+                          (el/link-to "http://zap2it.com/2016/02/john-travolta-hair-10-styles-handsome-creepy/" "John Travolta")
+                          [:br]
+                          (el/link-to "https://www.google.com/search?q=pipelines&safe=off&tbm=isch" "Pipelines")
+                          [:br]
+                          (el/link-to "https://twitter.com/Miles_Teller/status/753784939481403392" "Miles Teller")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Veronica_Roth" "Veronica Roth")
+                          [:br]
+                          (el/link-to "https://breakinggeek.files.wordpress.com/2015/07/jurassic-park-mr-dna.png" "\"Ginomics\"")]}
+                 {:date "2016/07/20"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "July 20th, 2016: 13 Hours, and How to Be Single."
                   :food ["Choco Chip Oreo Cookies"
