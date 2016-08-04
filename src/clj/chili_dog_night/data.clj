@@ -1,7 +1,40 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/07/27"
+(def gatherings [{:date "2016/08/03"
+                  :address "12283 Densmore Ave N, Seattle, WA 98133, USA",
+                  :synopsis "August 3rd, 2016: Pudge Bros Pizza, Term Life, and The Hot Flashes."
+                  :food ["Pudge Bros Cheese Pizza"]
+                  :attendees ["Alex Sanchez"
+                              "Jacob Dobner"
+                              "Matt Beck"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Term Life" :uri "http://www.imdb.com/title/tt2978102/"}
+                          {:title "The Hot Flashes" :uri "http://www.imdb.com/title/tt2201251/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Chernobyl_disaster" "Chernobyl")
+                          ", "
+                          (el/link-to "https://green.uw.edu/blog/2015-11/history-uws-own-nuclear-reactor" "nuclear reactors")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Hanford_Site" "Hanford")
+                          [:br]
+                          (el/link-to "http://pitchfork.com/news/66200-listen-to-grimes-new-song-medieval-warfare-from-suicide-squad/" "Medieval Warfare")
+                          ", and "
+                          (el/link-to "https://www.rottentomatoes.com/m/suicide_squad_2016" "Suicide Squad")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Transgender" "Transgender")
+                          ", "
+                          (el/link-to "https://en.wikipedia.org/wiki/Gender_role" "Gender")
+                          ", and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Feminism" "Feminism")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Troll_(Middle-earth)#Cave_Trolls" "Cave Trolls")
+                          [:br]
+                          (el/link-to "https://www.google.com/intl/en_us/chromecast/" "Chromecast")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Term_life_insurance" "Term life insurance")]}
+                 {:date "2016/07/27"
                   :address "12283 Densmore Ave N, Seattle, WA 98133, USA",
                   :synopsis "July 27th, 2016: I Am Wrath, and Allegiant."
                   :food ["Little Caesars Cheese Pizza"
