@@ -1,8 +1,46 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/08/03"
+(def gatherings [{:date "2016/08/10"
                   :address "12283 Densmore Ave N, Seattle, WA 98133, USA",
+                  :synopsis "August 10th, 2016: Ballard Pizza Company, Criminal, and Wild Wild West."
+                  :food ["Ballard Pizza Company Pepperoni Pizza"
+                         "Ballard Pizza Company Cheese Pizza"
+                         "Pepperidge Farm Dessert Shop Cookies S'mores"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :media [{:title "Criminal" :uri "http://www.imdb.com/title/tt3014866/"}
+                          {:title "Wild Wild West" :uri "http://www.imdb.com/title/tt0120891/"}]
+                  :notes [:p
+                          (el/link-to "https://youtu.be/6ZlbahhoEIo" "\"Wow\"")
+                          " by "
+                          (el/link-to "https://en.wikipedia.org/wiki/Beck" "Beck")
+                          [:br]
+                          (el/link-to "http://www.no-mans-sky.com/" "No Man's Sky")
+                          " and "
+                          (el/link-to "https://en.wikipedia.org/wiki/Procedural_generation" "procedural generation")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/JFK_(film)" "JFK")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Nuclear_weapons_and_the_United_States" "Nuclear weapons")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Kenneth_Branagh" "Kenneth Branagh")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Steampunk" "Steampunk")
+                          " and the "
+                          (el/link-to "http://whitenoise.kinja.com/how-wild-wild-west-helped-create-steampunk-1692973389" "Wild Wild West")
+                          [:br]
+                          "The "
+                          (el/link-to "https://en.wikipedia.org/wiki/United_States_Secret_Service" "Secret Service")
+                          ": its "
+                          (el/link-to "http://nowiknow.com/abraham-lincoln-created-the-secret-service-the-day-he-was-shot/" "past")
+                          " and "
+                          (el/link-to "https://www.washingtonpost.com/news/post-politics/wp/2014/10/01/a-shortlist-of-recent-secret-service-scandals/" "present")]}
+                 {:date "2016/08/03"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA",
                   :synopsis "August 3rd, 2016: Pudge Bros Pizza, Term Life, and The Hot Flashes."
                   :food ["Pudge Bros Cheese Pizza"]
                   :attendees ["Alex Sanchez"
