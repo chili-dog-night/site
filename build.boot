@@ -15,8 +15,8 @@
                  [buddy/buddy-auth "1.1.0"]
                  [org.postgresql/postgresql "9.4.1208"]
                  [org.omcljs/om "1.0.0-alpha28"]
-                 [org.clojure/clojure "1.9.0-alpha9"]
-                 [org.clojure/clojurescript "1.9.89"]
+                 [org.clojure/clojure "1.9.0-alpha10"]
+                 [org.clojure/clojurescript "1.9.198"]
                  [org.clojure/core.async "0.2.385"]
                  [org.clojure/java.jdbc "0.6.2-alpha1"]
                  [org.clojure/math.numeric-tower "0.0.4"]])
