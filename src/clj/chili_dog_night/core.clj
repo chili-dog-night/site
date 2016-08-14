@@ -37,34 +37,34 @@
   ([] (query-media-ids db-spec))
   ([db-spec]
    (jdbc/query db-spec
-     (sql/select * :media)
-     :result-set-fn #(shuffle %))))
+               (sql/select * :media)
+               {:result-set-fn #(shuffle %)})))
 
 (defn query-media-by-rating []
   (jdbc/query db-spec
-    (sql/select * :media
-      (sql/order-by {:rating :desc}))))
+              (sql/select * :media
+                          (sql/order-by {:rating :desc}))))
 
 (defn update-rating [a b]
   (jdbc/with-db-transaction [trans-conn db-spec]
     (let [media-a (jdbc/query trans-conn
                               (sql/select * :media
-                                (sql/where {:id (:id a)}))
-                              :result-set-fn #(first %))
+                                          (sql/where {:id (:id a)}))
+                              {:result-set-fn #(first %)})
           media-b (jdbc/query trans-conn
                               (sql/select * :media
-                                (sql/where {:id (:id b)}))
-                              :result-set-fn #(first %))
+                                          (sql/where {:id (:id b)}))
+                              {:result-set-fn #(first %)})
           actual-score-a (if (:winner a) 1 0)
           actual-score-b (if (:winner b) 1 0)
           expected-score-a (elo-expected-score (:rating media-a) (:rating media-b))
           expected-score-b (elo-expected-score (:rating media-b) (:rating media-a))]
       (jdbc/update! trans-conn :media
-        {:rating (Integer. (str (m/round (+ (:rating media-a) (* 32 (- actual-score-a expected-score-a))))))}
-        (sql/where {:id (:id media-a)}))
+                    {:rating (Integer. (str (m/round (+ (:rating media-a) (* 32 (- actual-score-a expected-score-a))))))}
+                    (sql/where {:id (:id media-a)}))
       (jdbc/update! trans-conn :media
-        {:rating (Integer. (str (m/round (+ (:rating media-b) (* 32 (- actual-score-b expected-score-b))))))}
-        (sql/where {:id (:id media-b)})))))
+                    {:rating (Integer. (str (m/round (+ (:rating media-b) (* 32 (- actual-score-b expected-score-b))))))}
+                    (sql/where {:id (:id media-b)})))))
 
 (defn requires-admin [f req]
   (if-not (authenticated? req)
