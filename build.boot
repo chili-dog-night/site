@@ -14,11 +14,11 @@
                  [java-jdbc/dsl "0.1.3"]
                  [buddy/buddy-auth "1.1.0"]
                  [org.postgresql/postgresql "9.4.1208"]
-                 [org.omcljs/om "1.0.0-alpha28"]
+                 [org.omcljs/om "1.0.0-alpha41"]
                  [org.clojure/clojure "1.9.0-alpha10"]
                  [org.clojure/clojurescript "1.9.198"]
                  [org.clojure/core.async "0.2.385"]
-                 [org.clojure/java.jdbc "0.6.2-alpha1"]
+                 [org.clojure/java.jdbc "0.6.2-alpha2"]
                  [org.clojure/math.numeric-tower "0.0.4"]])
 
 (require
