@@ -1,7 +1,41 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/08/10"
+(def gatherings [{:date "2016/08/24"
+                  :address "12283 Densmore Ave N, Seattle, WA 98133, USA"
+                  :synopsis "August 24th, 2016: Guacamole, and God's Not Dead 2"
+                  :food ["Greg's Guacamole"
+                         "M&M Cookies"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Matt Beck"
+                              "Colin Teal"]
+                  :media [{:title "God's Not Dead 2" :uri "http://www.imdb.com/title/tt4824308/"}]
+                  :notes [:p
+                          (el/link-to "https://en.wikipedia.org/wiki/Parenting" "Parenthood")
+                          [:br]
+                          (el/link-to "http://dnd.wizards.com/" "Dungeons")
+                          " "
+                          (el/link-to "http://theadventurezone.tumblr.com/" "&")
+                          " "
+                          (el/link-to "https://en.wikipedia.org/wiki/Dungeon_Master%27s_Guide" "Dragons")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Tabletop_game" "Tabletop Games")
+                          [:br]
+                          "The "
+                          (el/link-to "https://en.wikipedia.org/wiki/DSM-5" "DSM-5")
+                          " and the end of "
+                          (el/link-to "http://www.slate.com/articles/health_and_science/medical_examiner/2013/05/autism_spectrum_diagnoses_the_dsm_5_eliminates_asperger_s_and_pdd_nos.html" "Asperger's")
+                          [:br]
+                          (el/link-to "https://www.amazon.com/dp/B012N992EK" "Listen Liberal: Or, What Ever Happened to the Party of the People?")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/H._P._Lovecraft" "H.P. Lovecraft")
+                          [:br]
+                          (el/link-to "https://www.youtube.com/watch?v=Yjtm_Y1h2eI" "Tim's Cook Off")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Newsboys" "False Idols")]}
+                 {:date "2016/08/10"
                   :address "12283 Densmore Ave N, Seattle, WA 98133, USA",
                   :synopsis "August 10th, 2016: Ballard Pizza Company, Criminal, and Wild Wild West."
                   :food ["Ballard Pizza Company Pepperoni Pizza"

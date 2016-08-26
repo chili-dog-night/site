@@ -58,11 +58,14 @@
          (last coll)))))
 
 (defn comma-separate [coll]
-  (reduce into (concat
-                (map #(vec [% ", "])
-                     (drop-last 2 coll))
-                (reduce #(vec [[ % ", and "] [%2]])
-                        (take-last 2 coll)))))
+  (if (= (count coll) 1)
+   coll
+   (reduce into (concat
+                 (map #(vec [% ", "])
+                      (drop-last 2 coll))
+                 (reduce #(vec [[ % ", and "] [%2]])
+                         (take-last 2 coll))))))
+
 
 (defn gathering-partial [data]
   [:section
