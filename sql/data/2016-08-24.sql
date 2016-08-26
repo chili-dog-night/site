@@ -7,4 +7,4 @@ INSERT INTO media
   created_at
 )
 VALUES
-("God's Not Dead 2", 'http://www.imdb.com/title/tt4824308/', 1000, '2016-08-24', now())
+('God\'s Not Dead 2', 'http://www.imdb.com/title/tt4824308/', 1000, '2016-08-24', now())
