@@ -1,5 +1,4 @@
 (set-env!
- :resource-paths #{"resources"}
  :source-paths #{"src/clj" "src/cljs"}
  :dependencies '[[adzerk/boot-cljs "1.7.228-1"]
                  [adzerk/boot-reload "0.4.12"]
@@ -41,7 +40,7 @@
 
 (deftask build []
   (comp
-   #_ (cljs :optimizations :advanced)
+   (cljs :optimizations :advanced)
    (css)
    (aot :namespace '#{chili-dog-night.core})
    (pom :project 'chili-dog-night
