@@ -1,7 +1,20 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/08/24"
+(def gatherings [{:date "2016/09/28"
+                  :address "12283 Densmore Ave N, Seattle, WA 98133, USA"
+                  :synopsis "September 28th, 2016: The Invasion, and Seventh Son"
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"]
+                  :media [{:title "The Invasion" :uri "http://www.imdb.com/title/tt0427392/"}
+                          {:title "Seventh Son" :uri "http://www.imdb.com/title/tt1121096/"}]
+                  :notes [:p
+                          "\""
+                          (el/link-to "https://www.youtube.com/watch?v=MrttEZDpDE8" "Tusk")
+                          "\""]}
+                 {:date "2016/08/24"
                   :address "12283 Densmore Ave N, Seattle, WA 98133, USA"
                   :synopsis "August 24th, 2016: Guacamole, and God's Not Dead 2"
                   :food ["Greg's Guacamole"
