@@ -47,4 +47,5 @@
    (pom :project 'chili-dog-night
         :version "0.1.0")
    (uber)
-   (jar :main 'chili-dog-night.core)))
+   (jar :main 'chili-dog-night.core)
+   (target)))
