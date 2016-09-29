@@ -41,7 +41,7 @@
 
 (deftask build []
   (comp
-   (cljs :optimizations :advanced)
+   #_ (cljs :optimizations :advanced)
    (css)
    (aot :namespace '#{chili-dog-night.core})
    (pom :project 'chili-dog-night
