@@ -21,7 +21,7 @@
    [:p "©&nbsp;2016 Chili Dog Night Productions"]])
 
 (defn common [title head body]
-  (h/html5
+  (h/html5 {:lang "en"}
    [:head
     [:meta {:charset "utf-8"}]
     [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
