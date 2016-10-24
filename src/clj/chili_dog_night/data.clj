@@ -1,7 +1,36 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
-(def gatherings [{:date "2016/09/28"
+(def gatherings [{:date "2016/10/12"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "October 12th, 2016: Warcraft, and Hillary's America"
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Warcraft" :uri "http://www.imdb.com/title/tt0803096/"}
+                          {:title "Hillary's America" :uri "http://www.imdb.com/title/tt5646136/"}]
+                  :notes [:p
+                          (el/link-to "http://thebaffler.com/blog/workaday-woes-whatley" "Workaday Woes")
+                          " and the "
+                          (el/link-to "http://thebaffler.com/" "Baffler")
+                          [:br]
+                          "\""
+                          (el/link-to "https://www.washingtonpost.com/politics/trump-recorded-having-extremely-lewd-conversation-about-women-in-2005/2016/10/07/3b9ce776-8cb4-11e6-bf8a-3d26847eeed4_story.html" "Grab them by the...")
+                          "\""
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Duncan_Jones" "Duncan Jones")
+                          [:br]
+                          "\""
+                          (el/link-to "http://www.urbandictionary.com/define.php?term=For%20The%20Horde!" "For the Horde!")
+                          "\""
+                          [:br]
+                          (el/link-to "http://wowwiki.wikia.com/wiki/Murloc" "Murloc")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Dinesh_D%27Souza" "Dinesh D'Souza")]}
+                 {:date "2016/09/28"
                   :address "12283 Densmore Ave N, Seattle, WA 98133, USA"
                   :synopsis "September 28th, 2016: The Invasion, and Seventh Son"
                   :attendees ["Alex Sanchez"
