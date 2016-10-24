@@ -1,6 +1,25 @@
 (ns chili-dog-night.data
   (:require [hiccup.element :as el]))
 
+(def make-movies-great-again [{:date "2016/08/17"
+                               :address ""
+                               :synopsis "August 17th, 2016: Cult Films - Marth Marcy May Marlene, The Invitation"
+                               :themes ["Cult Films"]
+                               :food ["Spaghetti"]
+                               :attendees ["Alex Sanchez"
+                                          "Jason Aumann"
+                                          "Greg Ryan"
+                                          "Jacob Dobner"
+                                          "Colin Teal"]
+                               :media [{:title "Martha Marcy May Marlene" :uri "http://www.imdb.com/title/tt1441326/"}
+                                       {:title "The Invitation" :uri "http://www.imdb.com/title/tt2400463/"}]
+                               :notes [:p
+                                       (el/link-to "https://en.wikipedia.org/wiki/Elizabeth_Olsen" "Elizabeth Olsen")
+                                       " and "
+                                       (el/link-to "https://en.wikipedia.org/wiki/John_Hawkes_(actor)" "John Hawkes")
+                                       [:br]
+                                       (el/link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
+
 (def gatherings [{:date "2016/10/12"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "October 12th, 2016: Warcraft, and Hillary's America"

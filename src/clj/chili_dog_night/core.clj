@@ -85,13 +85,19 @@
                                       (apply update-rating media)
                                       (redirect "/app")))))))
 
+(defn render-gathering [d year month day]
+  (let [gatherings (drop-while #(not (= (:date %) (str year "/" month "/" day)))
+                               d)]
+    (when-not (empty? gatherings)
+      (apply views/gathering (take 2 gatherings)))))
+
 (defroutes routes
   (GET "/" [] (apply views/home (take 2 data/gatherings)))
+  (GET "/make-movies-great-again" [] (apply views/home (take 2 data/make-movies-great-again)))
+  (GET "/make-movies-great-again/:year/:month/:day" [year month day]
+    (render-gathering data/make-movies-great-again year month day))
   (GET "/gatherings/:year/:month/:day" [year month day]
-    (let [gatherings (drop-while #(not (= (:date %) (str year "/" month "/" day)))
-                                 data/gatherings)]
-      (when-not (empty? gatherings)
-        (apply views/gathering (take 2 gatherings)))))
+    (render-gathering data/gatherings year month day))
   (GET "/colophon" [] (views/colophon))
   (GET "/about" [] (views/about))
   (GET "/rss" []

@@ -12,6 +12,7 @@
    [:h1 (el/link-to "/" "Chili Dog Night")]
    [:nav
     (el/unordered-list [(el/link-to "/ratings" "Ratings")
+                        (el/link-to "/make-movies-great-again" "Make Movies Great Again")
                         (el/link-to "/about" "About")
                         (el/link-to "/colophon" "Colophon")])]])
 
@@ -88,6 +89,17 @@
            [:h2 404]
            [:p "The resource you requested was not found."]]))
 
+(defn previously [data]
+  (when-not (nil? data)
+              [:div {:style "text-align: right;"}
+               (el/link-to (str "/"
+                                (if (:themes data)
+                                  "make-movies-great-again"
+                                  "gatherings")
+                                "/"
+                                (:date data))
+                           "Previously...")]))
+
 (defn home
   ([latest] (home latest nil))
   ([latest previous]
@@ -95,9 +107,7 @@
            [:meta {:name "description" :content "This is the story of a friendship forged in food, film, and fear. It is pain, but it is also laughter. This is Chili Dog Night."}]
            [:div
             (gathering-partial latest)
-            (when-not (nil? previous)
-              [:div {:style "text-align: right;"}
-               (el/link-to (str "/gatherings/" (:date previous)) "Previously...")])])))
+            (previously previous)])))
 
 (defn gathering
   ([latest] (gathering latest nil))
@@ -106,9 +116,7 @@
            [:meta {:name "description" :content (:synopsis latest)}]
            [:div
             (gathering-partial latest)
-            (when-not (nil? previous)
-              [:div {:style "text-align: right;"}
-               (el/link-to (str "/gatherings/" (:date previous)) "Previously...")])])))
+            (previously previous)])))
 
 (defn admin [a b]
   (common "Behind the Scenes"
