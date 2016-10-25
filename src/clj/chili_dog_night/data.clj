@@ -23,6 +23,7 @@
 (def gatherings [{:date "2016/10/12"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "October 12th, 2016: Warcraft, and Hillary's America"
+                  :food ["Chili Dogs"]
                   :attendees ["Alex Sanchez"
                               "Jason Aumann"
                               "Greg Ryan"
