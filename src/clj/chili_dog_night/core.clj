@@ -1,34 +1,32 @@
 (ns chili-dog-night.core
   (:use ring.middleware.gzip
         ring.middleware.params)
-  (:require [ring.util.response :refer [redirect response file-response]]
-            [ring.adapter.jetty :refer [run-jetty]]
-            [ring.middleware.reload :refer [wrap-reload]]
+  (:require [buddy.auth :refer [authenticated? throw-unauthorized]]
+            [buddy.auth.backends :as backends]
+            [buddy.auth.middleware :refer [wrap-authentication]]
+            [buddy.hashers :as hashers]
+            [chili-dog-night.data :as data]
+            [chili-dog-night.views :as views]
+            [clj-redis-session.core :refer [redis-store]]
+            [clj-rss.core :as rss]
+            [clojure.java.jdbc :as jdbc]
+            [clojure.math.numeric-tower :as m]
+            [clojure.string :as str]
             [compojure.core :refer [defroutes context GET POST]]
             [compojure.route :as route]
             [compojure.handler :as handler]
-            [clj-rss.core :as rss]
             [java-jdbc.sql :as sql]
-            [clojure.java.jdbc :as jdbc]
-            [clojure.math.numeric-tower :as m]
-            [buddy.auth :refer [authenticated? throw-unauthorized]]
-            [buddy.auth.backends.httpbasic :refer [http-basic-backend]]
-            [buddy.auth.middleware :refer [wrap-authentication wrap-authorization]]
-            [chili-dog-night.data :as data]
-            [chili-dog-night.views :as views])
+            [ring.adapter.jetty :refer [run-jetty]]
+            [ring.middleware.reload :refer [wrap-reload]]
+            [ring.middleware.session :refer [wrap-session]]
+            [ring.util.response :refer [redirect response file-response]])
   (:gen-class))
 
 (def ^:dynamic *rss-feed-item-limit* 20)
-(def ^:dynamic *auth-data* {:admin (System/getenv "CHILI_DOG_NIGHT_ADMIN_PASSWORD")})
+(def ^:dynamic *backend* (backends/session))
 (def ^:dynamic db-spec (System/getenv "DATABASE_URL"))
-
-(defn basic-auth [req {:keys [username password]}]
-  (when-let [user-password (get *auth-data* (keyword username))]
-    (when (= password user-password)
-      (keyword username))))
-
-(def ^:dynamic *backend* (http-basic-backend {:realm "ChiliDogNight"
-                                              :authfn basic-auth}))
+(def ^:dynamic redis-conn {:pool {:max-active 20}
+                           :spec {:uri (System/getenv "REDIS_URL")}})
 
 (defn elo-expected-score [ra rb]
   (/ 1 (+ 1 (m/expt 10 (/ (- rb ra) 400)))))
@@ -91,9 +89,32 @@
     (when-not (empty? gatherings)
       (apply views/gathering (take 2 gatherings)))))
 
+(defn find-user-by-email [email]
+  (when-not (nil? email)
+    (jdbc/query db-spec
+                ["SELECT * FROM users WHERE email = ?" email]
+                {:result-set-fn first})))
+
+(defn login-authenticate
+  [request]
+  (let [email (str/lower-case (get-in request [:form-params "email"]))
+        password (get-in request [:form-params "password"])
+        session (:session request)
+        user (find-user-by-email email)]
+    (if (hashers/check password (:password user))
+      (-> (redirect "/app")
+          (assoc :session (assoc session :identity user)))
+      (views/login))))
+
 (defroutes routes
   (GET "/" [] (apply views/home (take 2 data/gatherings)))
-  (GET "/make-movies-great-again" [] (apply views/home (take 2 data/make-movies-great-again)))
+  (GET "/login" [] (views/login))
+  (POST "/login" [] login-authenticate)
+  (GET "/logout" []
+    (-> (redirect "/")
+        (assoc :session {})))
+  (GET "/make-movies-great-again" []
+    (apply views/home (take 2 data/make-movies-great-again)))
   (GET "/make-movies-great-again/:year/:month/:day" [year month day]
     (render-gathering data/make-movies-great-again year month day))
   (GET "/gatherings/:year/:month/:day" [year month day]
@@ -112,9 +133,10 @@
 
 (def handler
   (wrap-reload (-> routes
-                   (wrap-authorization *backend*)
                    (wrap-authentication *backend*)
                    (wrap-params)
+                   (wrap-session {:store (redis-store redis-conn {:expire-secs (* 3600 24)
+                                                                  :reset-on-read true})})
                    (wrap-gzip))))
 
 (defn -main [& [port]]

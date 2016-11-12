@@ -82,6 +82,20 @@
      [:p "This is what they discussed during, and between films:"])
    (:notes data)])
 
+(defn login []
+  (common "Login"
+          [:meta {:name "description" :content "Login"}]
+          [:section
+           [:h2 "Login"]
+           [:form {:method "post" :action "/login"}
+            [:div
+              [:label {:for "email"} "Email address"]
+              [:input {:name "email" :type "text"}]]
+            [:div
+              [:label {:for "password"} "Password"]
+              [:input {:name "password" :type "password"}]]
+            [:button "Login"]]]))
+
 (defn not-found []
   (common "404"
           [:meta {:name "description" :content "You look lost."}]
