@@ -7,17 +7,38 @@
             [clj-time.format :as f]
             [clojure.string :as str]))
 
+(defn link-to [url text]
+  (el/link-to {:class "link blue underline-hover"}
+              url
+              text))
+
+(defn headline [text]
+  [:h2.f2.f-subheadline-ns.lh-title.mb4.mt0 text])
+
+(defn p
+  ([] [:p.f4.f3-ns.measure.lh-copy])
+  ([body] (into (p) body)))
+
 (defn header []
-  [:header {:role "banner"}
-   [:h1 (el/link-to "/" "Chili Dog Night")]
-   [:nav
-    (el/unordered-list [(el/link-to "/ratings" "Ratings")
-                        (el/link-to "/make-movies-great-again" "Make Movies Great Again")
-                        (el/link-to "/about" "About")
-                        (el/link-to "/colophon" "Colophon")])]])
+  [:header.db.dt-l.w-100.border-box.pa3.ph5-l {:role "banner"}
+   [:h1.db.dtc-l.v-mid.w-100.w-25-l.tc.tl-l.mb2.mb0-l
+    (el/link-to {:class "link dark-gray underline-hover"} "/" "Chili Dog Night")]
+   [:nav.db.dtc-l.v-mid.w-100.w-75-l.tc.tr-l
+    (el/link-to {:class "link underline-hover blue f6 f5-l dib mr3 mr4-l"}
+                "/ratings"
+                "Ratings")
+    (el/link-to {:class "link underline-hover blue f6 f5-l dib mr3 mr4-l"}
+                "/make-movies-great-again"
+                "Make Movies Great Again")
+    (el/link-to {:class "link underline-hover blue f6 f5-l dib mr3 mr4-l"}
+                "/about"
+                "About")
+    (el/link-to {:class "link underline-hover blue f6 f5-l dib"}
+                "/colophon"
+                "Colophon")]])
 
 (defn footer []
-  [:footer {:role "contentinfo"}
+  [:footer.ph3.ph5-ns{:role "contentinfo"}
    [:p "©&nbsp;2016 Chili Dog Night Productions"]])
 
 (defn common [title head body]
@@ -25,13 +46,12 @@
    [:head
     [:meta {:charset "utf-8"}]
     [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
-    [:meta {:name "viewport" :content "width=device-width, initial-scale=1, maximum-scale=1"}]
-    (h/include-css "//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic")
-    (h/include-css "/css/styles.css")
+    [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+    (h/include-css "//cdnjs.cloudflare.com/ajax/libs/tachyons/4.5.5/tachyons.min.css")
     [:title (str title " | " "Chili Dog Night")]
     [:link {:rel "alternate" :type "application/rss+xml" :href "/rss" :title "Chili Dog Night"}]
     head]
-   [:body
+   [:body.w-100.sans-serif
     (header)
     [:main body]
     (footer)]))
@@ -41,8 +61,8 @@
           :itemtype "http://schema.org/Movie"}
    [:meta {:itemprop "name"
            :content (:title film)}]
-   (el/link-to (:uri film)
-               (str/replace (:title film) #"\s" "&nbsp;"))])
+   (link-to (:uri film)
+            (str/replace (:title film) #"\s" "&nbsp;"))])
 
 (defn person [name]
   [:span {:itemscope ""
@@ -70,8 +90,8 @@
 
 (defn gathering-partial [data]
   [:section
-   [:h2 (:date data)]
-   (reduce into [:p]
+   (headline (:synopsis data))
+   (reduce into (p)
            [(comma-separate (map person (sort (:attendees data))))
             " experienced "
             (comma-separate (map film-citation (:media data)))
@@ -79,47 +99,48 @@
             (comma-separate-str (:food data))
             "."])
    (when-not (nil? (:notes data))
-     [:p "This is what they discussed during, and between films:"])
-   (:notes data)])
+     [:div
+      (p "This is what they discussed during, and between films:")
+      (p (:notes data))])])
 
 (defn login []
   (common "Login"
           [:meta {:name "description" :content "Login"}]
-          [:section
-           [:h2 "Login"]
-           [:form {:method "post" :action "/login"}
-            [:div
-              [:label {:for "email"} "Email address"]
-              [:input {:name "email" :type "text"}]]
-            [:div
-              [:label {:for "password"} "Password"]
-              [:input {:name "password" :type "password"}]]
-            [:button "Login"]]]))
+          [:section.pa3.pa5-ns
+           (headline "Login")
+           [:form.measure {:method "post" :action "/login"}
+            [:div.mt3
+              [:label.db.fw6.lh-copy.f6 {:for "email"} "Email address"]
+              [:input.b.pa2.input-reset.ba.bg-transparent {:name "email" :type "text"}]]
+            [:div.mt3
+              [:label.db.fw6.lh-copy.f6 {:for "password"} "Password"]
+              [:input.b.pa2.input-reset.ba.bg-transparent {:name "password" :type "password"}]]
+            [:div.mt3
+             [:input.b.ph3.pv2.input-reset.ba.b--black.bg-transparent.grow.pointer.f6.dib {:type "submit" :value "Login"}]]]]))
 
 (defn not-found []
   (common "404"
           [:meta {:name "description" :content "You look lost."}]
-          [:section
-           [:h2 404]
-           [:p "The resource you requested was not found."]]))
+          [:section.pa3.pa5-ns
+           (headline 404)
+           (p "The resource you requested was not found.")]))
 
 (defn previously [data]
   (when-not (nil? data)
-              [:div {:style "text-align: right;"}
-               (el/link-to (str "/"
-                                (if (:themes data)
-                                  "make-movies-great-again"
-                                  "gatherings")
-                                "/"
-                                (:date data))
-                           "Previously...")]))
+    (p [(link-to (str "/"
+                      (if (:themes data)
+                        "make-movies-great-again"
+                        "gatherings")
+                      "/"
+                      (:date data))
+                      "Previously...")])))
 
 (defn home
   ([latest] (home latest nil))
   ([latest previous]
    (common "Our cinematic torture chamber."
            [:meta {:name "description" :content "This is the story of a friendship forged in food, film, and fear. It is pain, but it is also laughter. This is Chili Dog Night."}]
-           [:div
+           [:article.pa3.pa5-ns
             (gathering-partial latest)
             (previously previous)])))
 
@@ -128,7 +149,7 @@
   ([latest previous]
    (common (:date latest)
            [:meta {:name "description" :content (:synopsis latest)}]
-           [:div
+           [:article.pa3.pa5-ns
             (gathering-partial latest)
             (previously previous)])))
 
@@ -136,44 +157,41 @@
   (common "Behind the Scenes"
           nil
           [:div
-           [:section {:id "app"}
-            [:h2 "Which is worse?"]
+           [:section.pa3.pa5-ns {:id "app"}
+            (headline "Which is worse?")
             [:form {:action "/api/media/vote"
                     :method "post"}
-             [:div
+             [:div.mt3
               [:input {:type "radio"
                        :name "selected-media-id"
                        :value (:id a)
                        :checked true}]
-              [:label (:title a)]]
-             [:div
+              [:label.pl3 (:title a)]]
+             [:div.mt3
               [:input {:type "radio"
                        :name "selected-media-id"
                        :value (:id b)}]
-              [:label (:title b)]]
+              [:label.pl3 (:title b)]]
              [:input {:type "hidden"
                       :name "media-a-id"
                       :value (:id a)}]
              [:input {:type "hidden"
                       :name "media-b-id"
                       :value (:id b)}]
-             [:button "I've made my decision"]]]]))
+             [:div.mt3
+              [:input.b.ph3.pv2.input-reset.ba.b--black.bg-transparent.grow.pointer.f6.dib {:type "submit" :value "I've made my decision"}]]]]]))
 
 (defn about []
   (common "About"
           [:meta {:name "description" :content "Somehow we got the part. Don't ask. This is Chili Dog Night."}]
-          [:section
-           [:h2 "About"]
-           [:p "Chili Dog Night is a celebration of the worst kinds of moving images "
+          [:section.pa3.pa5-ns
+           (headline "About")
+           (p ["Chili Dog Night is a celebration of the worst kinds of moving images "
             "experienced in tandem with relatively unhealthy foods. "
             "The primary objective is to deconstruct and ridicule movies that don't have an "
             "excuse for their bad behavior. While the occasional obvious choice is "
-            "consumed, like "
-            (film-citation {:title "The Room" :uri "http://www.theroommovie.com/"})
-            ", the real focus, and most painful kind of movie, is mainstream mediocrity, like "
-            (film-citation {:title "Aloha" :uri "http://www.imdb.com/title/tt1243974/"})
-            "."]
-           [:p "As of this moment Chili Dog Night is "
+            "consumed the real focus, and most infuriatingly painful kind of movie, is mainstream mediocrity."])
+           (p ["As of this moment Chili Dog Night is "
             (person "Alex Sanchez")
             ", "
             (person "Jason Aumann")
@@ -185,54 +203,50 @@
             (person "Matt Beck")
             ", "
             (person "Colin Teal")
-            ", and Kaia. They all hail from Seattle, and are slowly losing their minds one film at a time."]]))
+            ", and Kaia. They all hail from Seattle, and are slowly losing their minds one film at a time."])]))
 
 (defn colophon []
   (common "Colophon"
           [:meta {:name "description" :content "We made it good with a beginning, middle, and end. This is Chili Dog Night."}]
-          [:section
-           [:h2 "Colophon"]
-           [:p "This website was made possible by "
-            (el/link-to "http://clojure.org/" "Clojure")
+          [:section.pa3.pa5-ns
+           (headline "Colophon")
+           (p ["This website was made possible by "
+            (link-to "http://clojure.org/" "Clojure")
             " and "
-            (el/link-to "https://github.com/clojure/clojurescript" "ClojureScript")
+            (link-to "https://github.com/clojure/clojurescript" "ClojureScript")
             ". Compilation of the application is facilitated by "
-            (el/link-to "http://boot-clj.com/" "Boot")
+            (link-to "http://boot-clj.com/" "Boot")
             " and its myriad friends (e.g., "
-            (el/link-to "https://github.com/adzerk-oss/boot-cljs" "boot-cljs")
+            (link-to "https://github.com/adzerk-oss/boot-cljs" "boot-cljs")
             ", "
-            (el/link-to "https://github.com/adzerk-oss/boot-reload" "boot-reload")
+            (link-to "https://github.com/adzerk-oss/boot-reload" "boot-reload")
             ", and "
-            (el/link-to "https://github.com/pandeiro/boot-http" "boot-http")
+            (link-to "https://github.com/pandeiro/boot-http" "boot-http")
             "). Hypertext Markup Language (HTML) is generated via "
-            (el/link-to "https://github.com/weavejester/hiccup" "Hiccup")
+            (link-to "https://github.com/weavejester/hiccup" "Hiccup")
             ", and the Cascading Style Sheets (CSS) are grown with help from "
-            (el/link-to "https://github.com/noprompt/garden" "Garden")
+            (link-to "http://tachyons.io/" "Tachyons")
             ". The Really Simple Syndication (RSS) feed is created via "
-            (el/link-to "https://github.com/yogthos/clj-rss" "clj-rss")
-            ". The font used throughout is "
-            (el/link-to "https://www.google.com/fonts/specimen/Playfair+Display" "Playfair Display")
-            " provided by "
-            (el/link-to "https://www.google.com/fonts" "Google Fonts")
-            "."]
-           [:p "The domain name was purchased through "
-            (el/link-to "https://www.namecheap.com/" "NameCheap")
+            (link-to "https://github.com/yogthos/clj-rss" "clj-rss")
+            "."])
+           (p ["The domain name was purchased through "
+            (link-to "https://www.namecheap.com/" "NameCheap")
             ". Hosting of the application is provided by "
-            (el/link-to "https://www.heroku.com" "Heroku")
+            (link-to "https://www.heroku.com" "Heroku")
             ". The project source code is publicly available and stored on "
-            (el/link-to "https://github.com/chili-dog-night/site" "GitHub")
-            "."]]))
+            (link-to "https://github.com/chili-dog-night/site" "GitHub")
+            "."])]))
 
 (defn ratings [media]
   (common "Ratings"
           [:meta {:name "description" :content "The films we have suffered through from worst to less worse."}]
-          [:section
-           [:h2 "Ratings"]
-           [:p "The order below has been determined via random head to head voting. Each film is given an initial base rating that is updated per the "
-            (el/link-to "https://en.wikipedia.org/wiki/Elo_rating_system" "Elo rating system")
-            ". Adjustments to the ratings of winner and loser are based on the expected result versus the actual result for any given dual."]
-           [:p "The films are ordered from worst to least worst (best)."]
-           [:ol
+          [:section.pa3.pa5-ns
+           (headline "Ratings")
+           (p ["The order below has been determined via random head to head voting. Each film is given an initial base rating that is updated per the "
+            (link-to "https://en.wikipedia.org/wiki/Elo_rating_system" "Elo rating system")
+            ". Adjustments to the ratings of winner and loser are based on the expected result versus the actual result for any given dual."])
+           (p "The films are ordered from worst to least worst (best).")
+           [:ol.f4.f3-ns.lh-copy
             (map #(vec [:li (film-citation %)]) media)]]))
 
 (defn str->date [str]

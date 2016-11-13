@@ -3,7 +3,6 @@
  :dependencies '[[adzerk/boot-cljs "1.7.228-1"]
                  [adzerk/boot-reload "0.4.12"]
                  [pandeiro/boot-http "0.7.3"]
-                 [org.martinklepsch/boot-garden "1.3.2-0"]
                  [ring "1.5.0"]
                  [amalloy/ring-gzip-middleware "0.1.3"]
                  [compojure "1.5.1"]
@@ -25,25 +24,17 @@
 (require
  '[adzerk.boot-cljs :refer [cljs]]
  '[adzerk.boot-reload :refer [reload]]
- '[pandeiro.boot-http :refer [serve]]
- '[org.martinklepsch.boot-garden :refer [garden]])
-
-(deftask css []
-  (comp
-   (garden :output-to "resources/css/styles.css"
-           :styles-var 'chili-dog-night.styles/screen)))
+ '[pandeiro.boot-http :refer [serve]])
 
 (deftask dev []
   (comp (serve :handler 'chili-dog-night.core/handler :reload true)
         (watch)
-        (css)
         (reload :ids #{"resources/js/main"})
         (cljs :ids #{"resources/js/main"} :source-map true :optimizations :none)))
 
 (deftask build []
   (comp
    (cljs :optimizations :advanced)
-   (css)
    (aot :namespace '#{chili-dog-night.core})
    (pom :project 'chili-dog-night
         :version "0.1.0")
