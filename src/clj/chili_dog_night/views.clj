@@ -101,7 +101,7 @@
    (when-not (nil? (:notes data))
      [:div
       (p "This is what they discussed during, and between films:")
-      (p (:notes data))])])
+      (into [:p.f4.f3-ns.lh-copy] (:notes data))])])
 
 (defn login []
   (common "Login"
