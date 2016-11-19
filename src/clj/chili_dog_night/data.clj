@@ -4,7 +4,7 @@
 
 (def make-movies-great-again [{:date "2016/08/17"
                                :address ""
-                               :synopsis "August 17th, 2016: Cult Films - Marth Marcy May Marlene, The Invitation."
+                               :synopsis "August 17th, 2016: Cult Films - Martha Marcy May Marlene, The Invitation."
                                :themes ["Cult Films"]
                                :food ["Spaghetti"]
                                :attendees ["Alex Sanchez"
