@@ -20,7 +20,29 @@
                                        [:br]
                                        (el/link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2016/10/12"
+(def gatherings [{:date "2016/11/16"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "November 16th, 2016: Alice Through the Looking Glass, and Money Monster"
+                  :food ["Pepperidge Farm Boston Cream Pie Milano Melts"
+                         "Pepperidge Farm Double Chocolate Milano"
+                         "Pepperidge Farm Salted Caramel Milano"
+                         "Frozen Fruit Bars"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :media [{:title "Alice Through the Looking Glass" :uri "http://www.imdb.com/title/tt2567026/"}
+                          {:title "Money Monster" :uri "http://www.imdb.com/title/tt2241351/"}]
+                  :notes [:p
+                          (el/link-to "https://www.youtube.com/watch?v=eNykS4VlnwE" "Mad Max: Fury Road Black and Chrome")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Steve_Bannon" "Steve")
+                          " "
+                          (el/link-to "http://www.nytimes.com/2016/11/15/us/politics/stephen-bannon-breitbart-words.html" "Bannon")
+                          [:br]
+                          (el/link-to "https://en.wikipedia.org/wiki/Donald_Trump" "Donald Trump")]}
+                 {:date "2016/10/12"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "October 12th, 2016: Warcraft, and Hillary's America"
                   :food ["Chili Dogs"]
