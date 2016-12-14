@@ -20,7 +20,65 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2016/11/16"
+(def gatherings [{:date "2016/12/07"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "December 7th, 2016: Happy Christmas, and 12 Dates of Christmas."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Happy Christmas" :uri "http://www.imdb.com/title/tt2955096/"}
+                          {:title "12 Dates of Christmas" :uri "http://www.imdb.com/title/tt1846442/"}]
+                  :notes [(link-to "http://www.imdb.com/name/nm0447695/" "\"The matron saint of basic bitches\"")
+                          [:br]
+                          (link-to "http://scrappylittlenobody.com/" "Scrappy Little Nobody")
+                          ", "
+                          (link-to "https://www.youtube.com/watch?v=cmSbXsFE3l8" "Cups")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Mumblecore" "Mumblecore")
+                          [:br]
+                          (link-to "http://www.imdb.com/title/tt1336617/" "Cyrus")
+                          ", and The "
+                          (link-to "https://en.wikipedia.org/wiki/Mark_Duplass" "Duplass")
+                          " "
+                          (link-to "https://en.wikipedia.org/wiki/Jay_Duplass" "Brothers")
+                          [:br]
+                          (link-to "http://www.imdb.com/name/nm0005442/" "Amy Smart")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Groundhog_Day_(film)" "Groundhog Day")
+                          [:br]
+                          (link-to "http://www.hamiltonelectors.com/" "Hamilton Electors")
+                          ", the "
+                          (link-to "https://en.wikipedia.org/wiki/Electoral_College_(United_States)" "Electoral College")
+                          ", and "
+                          (link-to "https://en.wikipedia.org/wiki/Federalist_No._68" "Federalist No. 68")
+                          [:br]
+                          (link-to "https://en.m.wikipedia.org/wiki/National_Popular_Vote_Interstate_Compact" "National Popular Vote Interstate Compact")]}
+                 {:date "2016/11/30"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "November 30th, 2016: Domino's Pizza, Nine Lives, and Cell."
+                  :food ["Domino's Pizza"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"]
+                  :media [{:title "Nine Lives" :uri "http://www.imdb.com/title/tt4383594/"}
+                          {:title "Cell" :uri "http://www.imdb.com/title/tt2241351/"}]}
+                 {:date "2016/11/23"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "November 30th, 2016: Chili Dogs, and The Trust."
+                  :food ["Chili Dogs"]
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Kaia"]
+                  :media [{:title "The Trust" :uri "http://www.imdb.com/title/tt3733774/"}]
+                  :notes [(link-to "http://www.mercurynews.com/2016/11/16/for-thanksgiving-families-struggle-to-put-aside-election-politics/" "Family Strife at Thanksgiving")
+                          [:br]
+                          (link-to "http://www.salon.com/2014/08/08/how_one_man_destroyed_the_food_network_guy_fieri_has_made_culinary_tv_into_a_viewers_hell/" "Guy Fieri")]}
+                 {:date "2016/11/16"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "November 16th, 2016: Alice Through the Looking Glass, and Money Monster."
                   :food ["Pepperidge Farm Boston Cream Pie Milano Melts"
