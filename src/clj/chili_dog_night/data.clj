@@ -113,7 +113,7 @@
                               "Greg Ryan"
                               "Jacob Dobner"]
                   :media [{:title "Nine Lives" :uri "http://www.imdb.com/title/tt4383594/"}
-                          {:title "Cell" :uri "http://www.imdb.com/title/tt2241351/"}]}
+                          {:title "Cell" :uri "http://www.imdb.com/title/tt0775440/"}]}
                  {:date "2016/11/23"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "November 30th, 2016: Chili Dogs, and The Trust."
