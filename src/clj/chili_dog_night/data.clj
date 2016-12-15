@@ -20,7 +20,56 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2016/12/07"
+(def gatherings [{:date "2016/12/14"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "December 14th, 2016: Chili Dogs, Mr. Right, and Yoga Hosers."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :food ["Chili Dogs"]
+                  :media [{:title "Mr. Right" :uri "http://www.imdb.com/title/tt2091935/"}
+                          {:title "Yoga Hosers" :uri "http://www.imdb.com/title/tt3838992/"}]
+                  :notes [(link-to "https://youtu.be/VD1OpDdGyV4" "Wachet Auf, Ruft Uns Die Stimme")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach" "Johann Sebastian Bach")
+                          ", and the "
+                          (link-to "https://en.wikipedia.org/wiki/Canon_(music)" "canon")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/King_Arthur" "King Arthur")
+                          ", the "
+                          (link-to "http://www.arthurian-legend.com/" "legend")
+                          ", and "
+                          (link-to "https://en.wikipedia.org/wiki/Excalibur_(film)" "Exaclibur")
+                          [:br]
+                          (link-to "http://www.nytimes.com/2016/12/14/business/economy/fed-interest-rates-janet-yellen.html" "Interest Rates")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Get_Out_(film)" "Get")
+                          " "
+                          (link-to "https://www.youtube.com/watch?v=sRfnevzM9kQ" "Out")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Sam_Rockwell" "Sam Rockwell")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/New_Orleans" "New Orleans")
+                          ", and its "
+                          (link-to "https://en.wikipedia.org/wiki/Mercedes-Benz_Superdome" "Superdome")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Salish_Sea_human_foot_discoveries" "Salish Sea human foot discoveries")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Justin_Long" "Justin Long")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Max_Landis" "Max Landis")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Lily-Rose_Depp" "Lily-Rose Depp")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Harley_Quinn_Smith" "Harley Quinn Smith")
+                          ", and "
+                          (link-to "https://en.wikipedia.org/wiki/Sofia_Coppola" "Sofia Coppola")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=F-eMt3SrfFU" "Dunkirk")]}
+                 {:date "2016/12/07"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "December 7th, 2016: Happy Christmas, and 12 Dates of Christmas."
                   :attendees ["Alex Sanchez"
