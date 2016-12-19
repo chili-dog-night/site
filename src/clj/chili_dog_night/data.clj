@@ -116,7 +116,7 @@
                           {:title "Cell" :uri "http://www.imdb.com/title/tt0775440/"}]}
                  {:date "2016/11/23"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
-                  :synopsis "November 30th, 2016: Chili Dogs, and The Trust."
+                  :synopsis "November 23rd, 2016: Chili Dogs, and The Trust."
                   :food ["Chili Dogs"]
                   :attendees ["Alex Sanchez"
                               "Jason Aumann"
