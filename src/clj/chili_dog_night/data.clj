@@ -1,7 +1,6 @@
 (ns chili-dog-night.data
   (:require [chili-dog-night.views :refer [link-to]]))
 
-
 (def make-movies-great-again [{:date "2016/08/17"
                                :address ""
                                :synopsis "August 17th, 2016: Cult Films - Martha Marcy May Marlene, The Invitation."
@@ -20,7 +19,15 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2016/12/14"
+(def gatherings [{:date "2016/12/28"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "December 28th, 2016: Suicide Squad."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"]
+                  :media [{:title "Suicide Squad" :uri "http://www.imdb.com/title/tt1386697/"}]}
+                 {:date "2016/12/14"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "December 14th, 2016: Chili Dogs, Mr. Right, and Yoga Hosers."
                   :attendees ["Alex Sanchez"
