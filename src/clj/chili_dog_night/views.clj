@@ -39,7 +39,7 @@
 
 (defn footer []
   [:footer.ph3.ph5-ns{:role "contentinfo"}
-   [:p "©&nbsp;2016 Chili Dog Night Productions"]])
+   [:p "©&nbsp;2016,2017 Chili Dog Night Productions"]])
 
 (defn common [title head body]
   (h/html5 {:lang "en"}
