@@ -19,7 +19,37 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2016/12/28"
+(def gatherings [{:date "2017/01/18"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "January 18th, 2017: Around the World in 80 Days."
+                  :attendees ["Alex Sanchez"
+                              "Matt Beck"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Around the World in 80 Days" :uri "http://www.imdb.com/title/tt0327437/"}]}
+                 {:date "2017/01/04"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "January 4th, 2017: Ben-Hur, and The Canyons."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Ben-Hur" :uri "http://www.imdb.com/title/tt2638144/"}
+                          {:title "The Canyons" :uri "http://www.imdb.com/title/tt2292959/"}]
+                  :notes [(link-to "https://www.glympse.com/" "Glympse")
+                          [:br]
+                          (link-to "http://www.imdb.com/title/tt0052618/" "Ben-Hur")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Brian_De_Palma" "Brian De Palma")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Paul_Verhoeven" "Paul Verhoeven")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Paul_Schrader" "Paul Schrader")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Bret_Easton_Ellis" "Bret Easton Ellis")]}
+                 {:date "2016/12/28"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "December 28th, 2016: Suicide Squad."
                   :attendees ["Alex Sanchez"
