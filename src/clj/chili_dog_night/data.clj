@@ -2,7 +2,7 @@
   (:require [chili-dog-night.views :refer [link-to]]))
 
 (def make-movies-great-again [{:date "2016/08/17"
-                               :address ""
+                               :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                                :synopsis "August 17th, 2016: Cult Films - Martha Marcy May Marlene, The Invitation."
                                :themes ["Cult Films"]
                                :food ["Spaghetti"]
@@ -19,13 +19,20 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/01/18"
+(def gatherings [{:date "2017/02/08"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "February 8th, 2017: Inferno, and The Accountant."
+                  :attendees ["Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"]
+                  :media [{:title "Inferno" :uri "http://www.imdb.com/title/tt3062096/"}
+                          {:title "The Accountant" :uri "http://www.imdb.com/title/tt2140479/"}]}
+                 {:date "2017/01/18"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "January 18th, 2017: Around the World in 80 Days."
                   :attendees ["Alex Sanchez"
                               "Matt Beck"
                               "Jacob Dobner"
-                              "Colin Teal"
                               "Kaia"]
                   :media [{:title "Around the World in 80 Days" :uri "http://www.imdb.com/title/tt0327437/"}]}
                  {:date "2017/01/04"
