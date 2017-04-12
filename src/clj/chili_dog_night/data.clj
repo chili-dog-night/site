@@ -19,7 +19,31 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/02/08"
+(def gatherings [{:date "2017/03/29"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "March 29th, 2017: Steampunk'd, and USS Indianapolis: Men of Courage."
+                  :attendees ["Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :media [{:title "Steampunk'd" :uri "http://www.imdb.com/title/tt4777200/"}
+                          {:title "USS Indianapolis: Men of Courage" :uri "http://www.imdb.com/title/tt2032572/"}]
+                  :notes [(link-to "https://www.google.com/search?q=how+did+nicholas+cage+lose+all+his+money" "How did Nicholas Cage lose all of his money")
+                          "?"
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/USS_Indianapolis_(CA-35)" "USS Indianapolis")
+                          [:br]
+                          (link-to "https://youtu.be/yrpmv_zOa0k" "Farewell and Adieu")
+                          "..."
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Little_Boy" "Little Boy")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Enola_Gay" "Enola Gay")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Oceanic_whitetip_shark" "Oceanic Whitetip Shark")
+                          ", and the "
+                          (link-to "http://www.smithsonianmag.com/history/the-worst-shark-attack-in-history-25715092/" "worst shark attack in history")]}
+                 {:date "2017/02/08"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "February 8th, 2017: Inferno, and The Accountant."
                   :attendees ["Jason Aumann"
