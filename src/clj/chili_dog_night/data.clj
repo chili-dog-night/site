@@ -43,6 +43,17 @@
                           (link-to "https://en.wikipedia.org/wiki/Oceanic_whitetip_shark" "Oceanic Whitetip Shark")
                           ", and the "
                           (link-to "http://www.smithsonianmag.com/history/the-worst-shark-attack-in-history-25715092/" "worst shark attack in history")]}
+                 {:date "2017/03/01"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "March 1st, 2017: Steampunk'd, Snow White and the Huntsman, and The Huntsman: Winter's War"
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"]
+                  :food ["Chili Dogs"]
+                  :media [{:title "Steampunk'd" :uri "http://www.imdb.com/title/tt2381991/"}
+                          {:title "Snowhite and the Huntsman" :uri "http://www.imdb.com/title/tt1735898/"}
+                          {:title "The Huntsman: Winter's War" :uri "http://www.imdb.com/title/tt2381991/"}]}
                  {:date "2017/02/08"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "February 8th, 2017: Inferno, and The Accountant."
