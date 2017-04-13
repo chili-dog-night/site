@@ -19,7 +19,43 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/03/29"
+(def gatherings [{:date "2017/04/12"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "April 12th, 2017: Collateral Beauty."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :food ["Chips"
+                         "Guacamole"
+                         "Cougar Gold"]
+                  :media [{:title "Collateral Beauty" :uri "http://www.imdb.com/title/tt4682786/"}]
+                  :notes [(link-to "https://www.youtube.com/watch?v=dA5Yq1DLSmQ" "Pepsi")
+                          " ("
+                          (link-to "https://www.youtube.com/watch?v=Pn8pwoNWseM" "SNL")
+                          ")"
+                          [:br]
+                          (link-to "http://www.latimes.com/opinion/op-ed/la-oe-berlatsky-spicer-sessions-holocaust-centers-20170411-story.html" "Holocaust")
+                          " "
+                          (link-to "https://www.washingtonpost.com/news/post-politics/wp/2017/04/11/spicer-hitler-didnt-even-sink-to-using-chemical-weapons-although-he-sent-jews-to-the-holocaust-center/" "Centers")
+                          [:br]
+                          "Let them "
+                          (link-to "http://www.motherjones.com/politics/2017/04/trump-syria-chocolate-cake-mar-a-lago" "eat cake")
+                          "."
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=7G5l5q-DT2g" "Ingrid Goes West")
+                          " and "
+                          (link-to "https://www.youtube.com/watch?v=v7MGUNV8MxU" "Thor: Ragnarok")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/John_Swartzwelder" "John")
+                          " "
+                          (link-to "http://kernelmag.dailydot.com/features/report/8965/the-reclusive-genius-behind-the-funniest-episodes-of-the-simpsons/" "Swartzwelder")
+                          [:br]
+                          (link-to "http://www.flophousepodcast.com/" "The Flop House")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=5ct0Z2bQndM" "Mystery Science Theater 3000")]}
+                 {:date "2017/03/29"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 29th, 2017: Steampunk'd, and USS Indianapolis: Men of Courage."
                   :attendees ["Jason Aumann"
