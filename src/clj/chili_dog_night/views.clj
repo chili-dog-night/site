@@ -47,7 +47,7 @@
     [:meta {:charset "utf-8"}]
     [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
-    (h/include-css "//cdnjs.cloudflare.com/ajax/libs/tachyons/4.5.5/tachyons.min.css")
+    (h/include-css "//unpkg.com/tachyons@4.7.0/css/tachyons.min.css")
     [:title (str title " | " "Chili Dog Night")]
     [:link {:rel "alternate" :type "application/rss+xml" :href "/rss" :title "Chili Dog Night"}]
     head]
