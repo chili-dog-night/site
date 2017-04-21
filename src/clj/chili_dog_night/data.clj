@@ -19,7 +19,51 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/04/12"
+(def gatherings [{:date "2017/04/19"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "April 19th, 2017: Pudge Bros Cheese Pizza, Sandy Wexler."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :food ["Pudge Bros Cheese Pizza"]
+                  :media [{:title "Sandy Wexler" :uri "http://www.imdb.com/title/tt5893332/"}]
+                  :notes [(link-to "https://www.nytimes.com/2017/04/20/business/media/fears-of-revolt-by-consumers-felled-bill-oreilly.html" "Bill")
+                          " "
+                          (link-to "http://knowyourmeme.com/memes/bill-oreilly-rant" "O'Reilly")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Louie_Anderson" "Louie Anderson")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Louis_C.K." "Louis C.K.")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Larry_David" "Larry David")
+                          ", and "
+                          (link-to "https://en.wikipedia.org/wiki/Jimmy_Fallon" "Jimmy Fallon")
+                          [:br]
+                          (link-to "https://www.netflix.com/title/80128275" "Mystery Science Theater 3000: The Return")
+                          [:br]
+                          (link-to "http://www.confluenceofevents.com/" "Confluence of Events")
+                          [:br]
+                          "\""
+                          (link-to "https://twitter.com/sleezsisters/status/852358522989715458" "I am a Cuck")
+                          "\""
+                          [:br]
+                          (link-to "https://twitter.com/NewYorker/status/854530101517721600" "The New Yorker")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Richard_Brody" "Richard Brody")
+                          " "
+                          (link-to "http://www.newyorker.com/culture/richard-brody/adam-sandler-misused-comedic-art-sandy-wexler?mbid=social_twitter" "miss the mark")
+                          [:br]
+                          (link-to "http://portalvr.us/" "Portal Virtual Reality Arcade")
+                          [:br]
+                          (link-to "https://thebaffler.com/latest/paul-ryan-uberwonk" "Wonks")
+                          ", "
+                          (link-to "https://thebaffler.com/the-poverty-of-theory/stupid-brutal-world-alvarez" "Media")
+                          ", and "
+                          (link-to "https://en.wikipedia.org/wiki/HyperNormalisation" "HyperNormalisation")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Emigration" "Emigration")]}
+                 {:date "2017/04/12"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "April 12th, 2017: Collateral Beauty."
                   :attendees ["Alex Sanchez"
