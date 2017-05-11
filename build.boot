@@ -1,7 +1,7 @@
 (set-env!
  :source-paths #{"src/clj" "src/cljs"}
- :dependencies '[[adzerk/boot-cljs "1.7.228-1"]
-                 [adzerk/boot-reload "0.4.12"]
+ :dependencies '[[adzerk/boot-cljs "2.0.0"]
+                 [adzerk/boot-reload "0.5.1"]
                  [pandeiro/boot-http "0.7.3"]
                  [ring "1.5.0"]
                  [amalloy/ring-gzip-middleware "0.1.3"]
