@@ -19,7 +19,47 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/04/19"
+(def gatherings [{:date "2017/05/10"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "May 10th, 2017: Chili Dogs, Fifty Shades Darker, and Criminal Activities."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :food ["Chili Dogs"]
+                  :media [{:title "Fifty Shades Darker" :uri "http://www.imdb.com/title/tt4465564/"}
+                          {:title "Criminal Activities" :uri "http://www.imdb.com/title/tt3687310/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)" "Guardians of the Galaxy")
+                          [:br]
+                          (link-to "http://www.seattletimes.com/business/amazon/amazon-creating-a-place-for-hundreds-of-homeless-on-its-shiny-new-seattle-campus/" "Corporate Benevolence")
+                          [:br]
+                          (link-to "https://youtu.be/gCcx85zbxz4" "Blade Runner 2049")
+                          [:br]
+                          (link-to "http://www.imdb.com/title/tt4054654/" "Dog")
+                          " "
+                          (link-to "https://en.wikipedia.org/wiki/Dog_Eat_Dog_(2016_film)" "Eat")
+                          " "
+                          (link-to "https://www.youtube.com/watch?v=Pt0FkSTyffs" "Dog")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/E._L._James" "E.L. James")
+                          [:br]
+                          "\""
+                          (link-to "http://nymag.com/selectall/2016/12/how-mike-cernovich-is-pizzagating-his-latest-victim.html" "Weird")
+                          " "
+                          (link-to "http://www.nydailynews.com/news/national/meet-conspiracist-donald-trump-jr-thinks-deserves-pulitzer-article-1.3018659" "Mike")
+                          "\""
+                          " "
+                          (link-to "https://en.wikipedia.org/wiki/Mike_Cernovich" "Cernovich")
+                          ", "
+                          (link-to "https://twitter.com/KrangTNelson/status/860913450523996160" "Gorilla Mindset")
+                          [:br]
+                          (link-to "http://www.imdb.com/title/tt0451279/" "Wonder Woman")
+                          " ("
+                          (link-to "http://nytlive.nytimes.com/womenintheworld/2017/03/23/wonder-womans-lack-of-armpit-hair-sparks-feminist-debate/" "Armpit Hair Debate")
+                          ")"]}
+                 {:date "2017/04/19"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "April 19th, 2017: Pudge Bros Cheese Pizza, Sandy Wexler."
                   :attendees ["Alex Sanchez"
