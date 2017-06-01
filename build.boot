@@ -14,10 +14,10 @@
                  [buddy/buddy-auth "1.2.0"]
                  [buddy/buddy-hashers "1.0.0"]
                  [org.postgresql/postgresql "9.4.1208"]
-                 [org.omcljs/om "1.0.0-alpha41"]
-                 [org.clojure/clojure "1.9.0-alpha15"]
-                 [org.clojure/clojurescript "1.9.494"]
-                 [org.clojure/core.async "0.2.385"]
+                 [org.omcljs/om "1.0.0-alpha48"]
+                 [org.clojure/clojure "1.9.0-alpha17"]
+                 [org.clojure/clojurescript "1.9.562"]
+                 [org.clojure/core.async "0.3.443"]
                  [org.clojure/java.jdbc "0.6.2-alpha2"]
                  [org.clojure/math.numeric-tower "0.0.4"]])
 
