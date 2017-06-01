@@ -19,7 +19,55 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/05/10"
+(def gatherings [{:date "2017/05/31"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "May 31st, 2017: The Shack, and Castle Freak."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Cody"]
+                  :media [{:title "The Shack" :uri "http://www.imdb.com/title/tt2872518/"}
+                          {:title "Castle Freak" :uri "http://www.imdb.com/title/tt0112643/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Sam_Worthington" "Sam Worthington")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Trinity" "Trinity")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Original_sin" "original sin")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=8j9zMok6two" "Malibu")
+                          " and "
+                          (link-to "https://www.youtube.com/watch?v=m2ua3O_fdCY" "\"Don't Dream It's Over\"")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Twin_Peaks_(2017_TV_series)" "Twin Peaks")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Stuart_Gordon" "Stuart Gordon")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Jeffrey_Combs" "Jeffrey Combs")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/H._P._Lovecraft" "H.P. Lovecraft")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/The_Outsider_(short_story)" "The Outsider")]}
+                 {:date "2017/05/24"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "May 24th, 2017: The Great Wall, and Atomica."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "The Great Wall" :uri "http://www.imdb.com/title/tt2034800/"}
+                          {:title "Atomica" :uri "http://www.imdb.com/title/tt2449638/"}]
+                  :notes [(link-to "https://youtu.be/12KHcSQiVz0" "Matt Damon")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Willem_Dafoe" "Willem Dafoe")
+                          [:br]
+                          (link-to "https://www.amazon.com/b?node=13270229011" "Amazon Books")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Tom_Sizemore" "Tom Sizemore")]}
+                 {:date "2017/05/10"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "May 10th, 2017: Chili Dogs, Fifty Shades Darker, and Criminal Activities."
                   :attendees ["Alex Sanchez"
