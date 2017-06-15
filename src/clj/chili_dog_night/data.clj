@@ -19,7 +19,32 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/05/31"
+(def gatherings [{:date "2017/06/14"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "June 14th, 2017: Spaghetti with Italian Sausage, and Beauty and the Beast."
+                  :attendees ["Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :food ["Spaghetti with Italian Sausage"
+                         "Garlic Bread"
+                         "Greg's Fried Eggplant"]
+                  :media [{:title "Beauty and the Beast" :uri "http://www.imdb.com/title/tt2771200/"}]
+                  :notes [(link-to "https://www.nytimes.com/2017/06/14/us/steve-scalise-congress-shot-alexandria-virginia.html" "G.O.P. Men's Baseball Team Shooting")
+                          [:br]
+                          (link-to "https://youtu.be/z2z857RSfhk" "Baby Driver")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Unbreakable_Kimmy_Schmidt" "Unbreakable Kimmy Schmidt")
+                          [:br]
+                          (link-to "https://www.washingtonpost.com/world/national-security/special-counsel-is-investigating-trump-for-possible-obstruction-of-justice/2017/06/14/9ce02506-5131-11e7-b064-828ba60fbb98_story.html" "Obstruction of Justice")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Pareto_principle" "Pareto Principle")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/The_Beatles" "The Beatles")
+                          " and "
+                          (link-to "https://www.amazon.com/Sgt-Peppers-Lonely-Hearts-Deluxe/dp/B071RHC3R2" "Sgt. Pepper's Lonely Hearts Club Band")]}
+                 {:date "2017/05/31"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "May 31st, 2017: The Shack, and Castle Freak."
                   :attendees ["Alex Sanchez"
