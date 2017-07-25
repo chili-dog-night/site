@@ -19,7 +19,24 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/06/14"
+(def gatherings [{:date "2017/07/19"
+                  :address "Landmark CREST Theatre, 16505 5th Ave NE, Shoreline, WA 98155, USA"
+                  :synopsis "July 19th, 2017: The Book of Henry."
+                  :attendees ["Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :media [{:title "The Book of Henry" :uri "http://www.imdb.com/title/tt4572792/"}]}
+                 {:date "2017/07/12"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "July 12th, 2017: Miss Peregrine's Home for Peculiar Children, and Ender's Game."
+                  :attendees ["Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :media [{:title "Miss Peregrine's Home for Peculiar Children" :uri "http://www.imdb.com/title/tt1935859/"}
+                          {:title "Ender's Game" :uri "http://www.imdb.com/title/tt1731141/"}]}
+                 {:date "2017/06/14"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "June 14th, 2017: Spaghetti with Italian Sausage, and Beauty and the Beast."
                   :attendees ["Jason Aumann"
