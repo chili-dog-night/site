@@ -19,7 +19,41 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/07/19"
+(def gatherings [{:date "2017/07/26"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "July 26th, 2017: Potatoes, Sausage, and Eggs, and Ghost in the Shell."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :food ["Potatoes, Sausage, and Eggs"]
+                  :media [{:title "Ghost in the Shell" :uri "http://www.imdb.com/title/tt1219827/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Dunkirk_(2017_film)" "Dunkirk")
+                          [:br]
+                          (link-to "https://youtu.be/LiK2fhOY0nE" "Ready")
+                          " "
+                          (link-to "https://en.wikipedia.org/wiki/Ready_Player_One" "Player")
+                          " "
+                          (link-to "https://twitter.com/donniemnemonic/status/889215615717605376" "One")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Peter_Jackson" "Peter Jackson")
+                          [:br]
+                          (link-to "https://www.bloomsbury.com/uk/the-incest-diary-9781408890455/" "The")
+                          " "
+                          (link-to "https://books.google.com/books/about/The_Incest_Diary.html?id=NviqAQAACAAJ" "Incest")
+                          " "
+                          (link-to "https://www.nytimes.com/2017/07/18/books/review-anonymous-incest-diary.html" "Diary")
+                          [:br]
+                          (link-to "https://www.ispot.tv/brands/ZnS/amazon-echo" "Amazon")
+                          " "
+                          (link-to "http://www.adweek.com/creativity/amazon-made-more-hundred-10-second-ads-asking-echo-funniest-things-173901/" "Commercials")
+                          [:br]
+                          (link-to "http://chemocare.com/chemotherapy/drug-info/Neulasta.aspx" "Neulasta")
+                          [:br]
+                          (link-to "https://soundcloud.com/chapo-trap-house/episode-127-dr-dementia-feat-ricky-rawls-72317" "Chapo Trap House")]}
+                 {:date "2017/07/19"
                   :address "Landmark CREST Theatre, 16505 5th Ave NE, Shoreline, WA 98155, USA"
                   :synopsis "July 19th, 2017: The Book of Henry."
                   :attendees ["Jason Aumann"
