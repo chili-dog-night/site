@@ -19,7 +19,63 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/07/26"
+(def gatherings [{:date "2017/08/24"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "August 23th, 2017: Baguette and Brie Cheese, Contract to Kill, and Sully."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :food ["Baguette" "Brie Cheese"]
+                  :media [{:title "Contract to Kill" :uri "http://www.imdb.com/title/tt5470222/"}
+                          {:title "Sully" :uri "http://www.imdb.com/title/tt3263904/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Nathan_for_You" "Nathan for You")
+                          " "
+                          (link-to "https://youtu.be/GJ9xBooAADM" "Season Four")
+                          [:br]
+                          (link-to "https://youtu.be/XpICoc65uh0" "Mother!")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Joss_Whedon" "Joss Whedon's")
+                          " "
+                          (link-to "http://www.thewrap.com/joss-whedon-feminist-hypocrite-infidelity-affairs-ex-wife-kai-cole-says/" "fall")
+                          " from "
+                          (link-to "http://aux.avclub.com/joss-whedon-was-never-a-feminist-1798346253" "grace")
+                          " (or lack thereof)"
+                          [:br]
+                          (link-to "https://youtu.be/yWi0HhZqykE" "Sully's Theme")
+                          [:br]
+                          (link-to "http://hotair.com/archives/2017/08/18/seattle-mayor-confederate-monument-statue-lenin-need-go/" "Mayor Murray's Megalomania")
+                          [:br]
+                          "Trump "
+                          (link-to "https://www.washingtonpost.com/news/post-politics/wp/2017/08/23/as-trump-ranted-and-rambled-in-phoenix-his-crowd-slowly-thinned/" "in Phoenix")
+                          " (or was it "
+                          (link-to "http://www.nydailynews.com/news/politics/trump-fans-claim-cavaliers-parade-photo-phoenix-rally-crowd-article-1.3435521" "Cleveland")
+                          "?)"
+                          [:br]
+                          (link-to "https://www.vanityfair.com/news/2017/07/department-of-energy-risks-michael-lewis" "The Government")
+                          [:br]
+                          (link-to "https://video.vice.com/en_us/video/charlottesville-race-and-terror-vice-news-tonight-on-hbo/59921b1d2f8d32d808bddfbc" "Charlottesville")
+                          " ("
+                          (link-to "https://twitter.com/Reetae27/status/899018562647375872" "Ken Burns")
+                          "), "
+                          (link-to "https://en.wikipedia.org/wiki/Fascism" "Fascism")
+                          " and its "
+                          (link-to "https://en.wikipedia.org/wiki/Fascist_symbolism" "symbolism")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Adolf_Hitler%27s_possible_monorchism" "Gonad")]}
+                 {:date "2017/08/16"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "August 16th, 2017: Spaghetti with Sausage, and King Arthur: Legend of the Sword."
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Matt Beck"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Cody"]
+                  :food ["Spaghetti with Sausage", "Klondike Heath Bars"]
+                  :media [{:title "King Arthur: Legend of the Sword" :uri "http://www.imdb.com/title/tt1972591/"}]}
+                 {:date "2017/07/26"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "July 26th, 2017: Potatoes, Sausage, and Eggs, and Ghost in the Shell."
                   :attendees ["Alex Sanchez"
