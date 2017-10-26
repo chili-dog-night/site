@@ -1,8 +1,8 @@
 (set-env!
  :source-paths #{"src/clj" "src/cljs"}
- :dependencies '[[adzerk/boot-cljs "2.0.0"]
-                 [adzerk/boot-reload "0.5.1"]
-                 [pandeiro/boot-http "0.7.3"]
+ :dependencies '[[adzerk/boot-cljs "2.1.4"]
+                 [adzerk/boot-reload "0.5.2"]
+                 [pandeiro/boot-http "0.8.3"]
                  [ring "1.5.0"]
                  [amalloy/ring-gzip-middleware "0.1.3"]
                  [compojure "1.5.1"]
@@ -15,8 +15,8 @@
                  [buddy/buddy-hashers "1.0.0"]
                  [org.postgresql/postgresql "9.4.1208"]
                  [org.omcljs/om "1.0.0-beta1"]
-                 [org.clojure/clojure "1.9.0-alpha17"]
-                 [org.clojure/clojurescript "1.9.562"]
+                 [org.clojure/clojure "1.9.0-beta2"]
+                 [org.clojure/clojurescript "1.9.946"]
                  [org.clojure/core.async "0.3.443"]
                  [org.clojure/java.jdbc "0.6.2-alpha2"]
                  [org.clojure/math.numeric-tower "0.0.4"]])
