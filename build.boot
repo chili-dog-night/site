@@ -18,7 +18,7 @@
                  [org.clojure/clojure "1.9.0-beta2"]
                  [org.clojure/clojurescript "1.9.946"]
                  [org.clojure/core.async "0.3.443"]
-                 [org.clojure/java.jdbc "0.6.2-alpha2"]
+                 [org.clojure/java.jdbc "0.7.3"]
                  [org.clojure/math.numeric-tower "0.0.4"]])
 
 (require
