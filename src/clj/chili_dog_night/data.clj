@@ -73,7 +73,7 @@
                           ", and "
                           (link-to "https://en.wikipedia.org/wiki/Vanity_(singer)" "Vanity")
                           [:br]
-                          (link-to "https://www.youtube.com/watch?v=sWsnd4IUJdY" "Gene Simmons")
+                          (link-to "https://www.youtube.com/watch?v=vJsy434hg5c" "Gene Simmons")
                           " and "
                           (link-to "https://en.wikipedia.org/wiki/Zionism" "Zionism")
                           [:br]
