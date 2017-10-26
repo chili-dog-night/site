@@ -19,7 +19,74 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/08/24"
+(def gatherings [{:date "2017/10/25"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "October 25th, 2017: Chili Dogs, WNUF Halloween Special, and Never Too Young to Die."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Jason Aumann"
+                              "Colin Teal"
+                              "Matt Beck"]
+                  :food ["Chili Dogs"
+                         "Oreo Mystery Chocolate Sandwich Cookies"
+                         "Whidbey Salted Caramel Apple Pie"
+                         "Tillamook French Vanilla Ice Cream"]
+                  :media [{:title "WNUF Halloween Special" :uri "http://www.imdb.com/title/tt3104078/"}
+                          {:title "Never Too Young to Die" :uri "http://www.imdb.com/title/tt0091621/"}]
+                  :notes [(link-to "https://www.youtube.com/watch?v=xNsiQMeSvMk&feature=youtu.be" "Phantom Thread")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Paul_Thomas_Anderson" "Paul Thomas Anderson")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/The_Master_(2012_film)" "The Master")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Prenatal_diagnosis" "Non-Invasive Prenatal Testing")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Chapo_Trap_House" "Chapo Trap House")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Mindhunter_(TV_series)" "Mindhunter")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/David_Fincher" "David Fincher's")
+                          " limitations"
+                          [:br]
+                          (link-to "https://twitter.com/joshtpm/status/923238520948477952" "Presidential Dementia")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Harvey_Weinstein" "Weinstein")
+                          ", "
+                          (link-to "http://www.nytimes.com/2012/08/21/us/politics/rep-todd-akin-legitimate-rape-statement-and-reaction.html" "\"Legitimate Rape\"")
+                          ", "
+                          (link-to "https://jezebel.com/5369395/whoopi-on-roman-polanski-it-wasnt-rape-rape" "\"Rape-rape\"")
+                          ", and "
+                          (link-to "https://books.google.com/books?id=vxx8QUeHHsUC&pg=PA192&lpg=PA192&dq=Now+I+won%27t+have+to+suck+cock,+monroe&source=bl&ots=Mgd8mnKfiu&sig=L2vRE971OLcRF4EInmHZqQqvAQs&hl=en&sa=X&ved=0ahUKEwii1qW3hI_XAhUX_WMKHQUPCUIQ6AEIKDAA#v=onepage&q=Now%20I%20won't%20have%20to%20suck%20cock%2C%20monroe&f=false" "Marilyn Monroe")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Tales_from_the_Crypt_(TV_series)" "Tales from the Crypt")
+                          ": "
+                          (link-to "http://www.imdb.com/title/tt0716886/" "Television Terror")
+                          [:br]
+                          (link-to "https://www.buzzfeed.com/remysmidt/anne-frank-costume?utm_term=.nmMD9ADNRL#.ybxn9enpb7" "Smiffy's World War II Evacuee Girl Costume")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=xM9yR6unqhc" "Stargrove's Theme")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Prince_(musician)" "Prince")
+                          ", "
+                          (link-to "https://www.usmagazine.com/celebrity-news/news/carmen-electra-mourns-her-mentor-and-ex-prince-he-gave-me-my-name-w203762/" "Carmen Electra")
+                          ", and "
+                          (link-to "https://en.wikipedia.org/wiki/Vanity_(singer)" "Vanity")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=sWsnd4IUJdY" "Gene Simmons")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Zionism" "Zionism")
+                          [:br]
+                          (link-to "https://www.criterion.com/films/29008-barry-lyndon" "Barry Lyndon")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Tinker_Tailor_Soldier_Spy_(film)" "Tinker Tailor Soldier Spy")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Going_Clear_(film)" "Going Clear")
+                          " and the "
+                          (link-to "https://en.wikipedia.org/wiki/Ordo_Templi_Orientis" "Ordo Templi Orientis")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Neil_Breen" "Neil Breen")]}
+                 {:date "2017/08/24"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "August 23th, 2017: Baguette and Brie Cheese, Contract to Kill, and Sully."
                   :attendees ["Alex Sanchez"
