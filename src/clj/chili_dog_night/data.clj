@@ -144,7 +144,7 @@
                           (link-to "https://en.wikipedia.org/wiki/Ordo_Templi_Orientis" "Ordo Templi Orientis")
                           [:br]
                           (link-to "https://en.wikipedia.org/wiki/Neil_Breen" "Neil Breen")]}
-                 {:date "2017/08/24"
+                 {:date "2017/08/23"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "August 23th, 2017: Baguette and Brie Cheese, Contract to Kill, and Sully."
                   :attendees ["Alex Sanchez"
