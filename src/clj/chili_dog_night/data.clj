@@ -21,7 +21,7 @@
 
 (def gatherings [{:date "2017/11/28"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
-                  :synopsis "November 28th, 2017: Boss Baby, and Life on the Line"
+                  :synopsis "November 28th, 2017: Boss Baby, and Life on the Line."
                   :attendees ["Alex Sanchez"
                               "Greg Ryan"
                               "Jason Aumann"
