@@ -19,7 +19,65 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/10/25"
+(def gatherings [{:date "2017/11/28"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "November 28th, 2017: Boss Baby, and Life on the Line"
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Colin Teal"]
+                  :food ["Video Bread"
+                         "LU Cookies Le Petit Ecolier"]
+                  :media [{:title "Boss Baby" :uri "http://www.imdb.com/title/tt3874544/"}
+                          {:title "Life on the Line" :uri "http://www.imdb.com/title/tt3727202/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Net_neutrality" "Net Neutrality")
+                          [:br]
+                          (link-to "https://www.hollywoodreporter.com/features/dustin-hoffman-sexually-harassed-me-i-was-17-guest-column-1053466" "Dustin Hoffman")
+                          ", "
+                          (link-to "https://www.hollywoodreporter.com/news/george-takei-accused-sexually-assaulting-model-1981-1056698" "George Takei")
+                          ", and "
+                          (link-to "https://www.usatoday.com/story/life/2017/11/07/kevin-spacey-scandal-complete-list-13-accusers/835739001/" "Kevin Spacey")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=8J0-ZatDHug" "Alec Baldwin")
+                          [:br]
+                          (link-to "http://www.hollywood.com/movies/pixar-vs-dreamworks-60226406/" "Pixar vs Dreamworks")
+                          [:br]
+                          (link-to "https://soundcloud.com/chapo-trap-house" "Chapo Trap House")
+                          [:br]
+                          "RIP "
+                          (link-to "https://en.wikipedia.org/wiki/Lil_Peep" "Lil Peep")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Jenny_Durkan" "Jenny Durkan")
+                          " and the coming "
+                          (link-to "https://www.urbandictionary.com/define.php?term=Scoopologist" "Scoopologist")
+                          " workforce"
+                          [:br]
+                          (link-to "https://www.nytimes.com/2017/11/25/us/ohio-hovater-white-nationalist.html" "A Voice of Hate in America's Heartland")
+                          [:br]
+                          (link-to "https://www.amazon.com/b?ie=UTF8&node=17044620011" "HQ2")
+                          [:br]
+                          (link-to "https://streamable.com/58387" "Safelite")]}
+                 {:date "2017/11/15"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "November 15th, 2017: The Dark Tower, and In Search of Liberty."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jacob Dobner"
+                              "Jason Aumann"
+                              "Colin Teal"]
+                  :food ["Pumpkin Pie"]
+                  :media [{:title "The Dark Tower" :uri "http://www.imdb.com/title/tt1648190/"}
+                          {:title "In Search of Liberty" :uri "http://www.imdb.com/title/tt2219798/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Stephen_King" "Stephen King")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=8QEAA94FjHc" "Matthew")
+                          " "
+                          (link-to "https://www.youtube.com/watch?v=5ilv7R64DPc" "McConaughey")
+                          [:br]
+                          (link-to "https://www.merriam-webster.com/dictionary/cuckold" "Cuckold")
+                          [:br]
+                          (link-to "https://www.scad.edu/" "Savannah College of Art and Design")]}
+                 {:date "2017/10/25"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "October 25th, 2017: Chili Dogs, WNUF Halloween Special, and Never Too Young to Die."
                   :attendees ["Alex Sanchez"
