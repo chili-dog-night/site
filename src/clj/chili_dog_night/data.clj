@@ -19,7 +19,23 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/11/28"
+(def gatherings [{:date "2017/12/06"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "December 6th, 2017: A Christmas Prince, and Unforgettable."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :food ["LU Cookies Le Petit Ecolier"]
+                  :media [{:title "A Christmas Prince" :uri "http://www.imdb.com/title/tt7608418/"}
+                          {:title "Unforgettable" :uri "http://www.imdb.com/title/tt3462710/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Rosario_Dawson" "Rosario Dawson")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Eric_Andre" "Eric Andre")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Katherine_Heigl" "Katherine Heigl")]}
+                 {:date "2017/11/28"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "November 28th, 2017: Boss Baby, and Life on the Line."
                   :attendees ["Alex Sanchez"
