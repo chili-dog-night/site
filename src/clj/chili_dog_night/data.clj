@@ -19,7 +19,24 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/12/06"
+(def gatherings [{:date "2017/12/27"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "December 27th, 2017: Bright, and Monster Trucks."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :food ["Juanita's Tortilla Chips"
+                         "San Juan Salsa Co. Medium"]
+                  :media [{:title "Bright" :uri "http://www.imdb.com/title/tt5519340/"}
+                          {:title "Monster Trucks" :uri "http://www.imdb.com/title/tt3095734/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Max_Landis" "Max Landis")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Bitcoin" "Bitcoin")
+                          " "
+                          (link-to "https://www.tokenspread.com/spreads/top-price-spreads" "Bubble")]}
+                 {:date "2017/12/06"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "December 6th, 2017: A Christmas Prince, and Unforgettable."
                   :attendees ["Alex Sanchez"
