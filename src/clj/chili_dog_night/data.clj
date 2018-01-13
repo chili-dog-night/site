@@ -19,7 +19,55 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2017/12/27"
+(def gatherings [{:date "2018/01/10"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "January 10th, 2018: The Centennial, Chili Dogs, Going in Style, and I.T."
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :food ["Chili Dogs"
+                         "Tim's Cascade Maple Bacon Chips"
+                         "Klondike Bars"]
+                  :media [{:title "Going in Style" :uri "http://www.imdb.com/title/tt2568862/"}
+                          {:title "I.T." :uri "http://www.imdb.com/title/tt2679552/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Nintendo_Switch" "Nintendo Switch")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild" "The Legend of Zelda: Breath of the Wild")
+                          ", and "
+                          (link-to "https://en.wikipedia.org/wiki/Rocket_League" "Rocket League")
+                          [:br]
+                          (link-to "https://www.seattle.gov/business-license-tax/other-seattle-taxes/sweetened-beverage-tax" "Seattle Sweetened Beverage Tax")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Jeff_Bezos" "Jeff Bezos")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Gore_Vidal" "Gore Vidal")
+                          " "
+                          (link-to "https://www.vanityfair.com/news/2001/09/mcveigh200109" "on")
+                          " "
+                          (link-to "https://en.wikipedia.org/wiki/Timothy_McVeigh" "Timothy McVeigh")
+                          [:br]
+                          (link-to "http://www.kshamasawant.org/" "Kshama Sawant")
+                          " and the "
+                          (link-to "https://www.seattletimes.com/sports/nba/keyarena-mou-approved-by-seattle-city-council-will-nhl-announcement-soon-follow/" "KeyArena renovation")
+                          [:br]
+                          (link-to "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjdqqWyo9TYAhUFwmMKHaTwCoIQtwIINDAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-fny99f8amM&usg=AOvVaw38BWvXh_VD31mf18cJB53-" "HyperNormalisation")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/The_Witch_(2015_film)" "The Witch")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Richard_Linklater" "Richard Linklater")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Boyhood_(film)" "Boyhood")
+                          [:br]
+                          (link-to "https://www.youtube.com/watch?v=5hfAExhHTMM" "Brawl in Cell Block 99")
+                          [:br]
+                          (link-to "http://video.vanityfair.com/watch/six-new-year-s-resolutions-for-hillary-clinton" "Six New Year's Resolutions for Hillary Clinton")
+                          " and "
+                          (link-to "http://www.vulture.com/2018/01/oscars-2018-your-guide-to-the-three-billboards-backlash.html" "Three Billboards Outside Ebbing, Missouri")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/The_Americans_(2013_TV_series)" "The Americans")]}
+                 {:date "2017/12/27"
                   :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                   :synopsis "December 27th, 2017: Bright, and Monster Trucks."
                   :attendees ["Alex Sanchez"
