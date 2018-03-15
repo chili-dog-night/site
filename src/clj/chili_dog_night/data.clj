@@ -19,7 +19,48 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2018/01/10"
+(def gatherings [{:date "2018/03/14"
+                  :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
+                  :synopsis "March 14th, 2018: Blackberry Pie, The Assignment, and New in Town"
+                  :attendees ["Alex Sanchez"
+                              "Greg Ryan"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"
+                              "Kaia"]
+                  :food ["Blackberry Pie"]
+                  :media [{:title "The Assignment" :uri "http://www.imdb.com/title/tt5034474/"}
+                          {:title "New in Town" :uri "http://www.imdb.com/title/tt1095174/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Memphis,_Tennessee" "Memphis")
+                          ", "
+                          (link-to "https://en.wikipedia.org/wiki/Nashville,_Tennessee" "Nashville")
+                          [:br]
+                          (link-to "https://youtu.be/rjLVCpE3kuw" "Ready Player One")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Black_Panther_(film)" "Black Panther")
+                          ", its "
+                          (link-to "https://www.esquire.com/entertainment/movies/a18241993/black-panther-review-politics-killmonger/" "strange politics")
+                          ", and the erosion of \"cinema\" as art"
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Walter_Hill" "Walter Hill")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Bret_Easton_Ellis" "Bret Easton Ellis")
+                          " "
+                          (link-to "https://podcastone.com/episode/B.E.E.---Walter-Hill---5/1/17" "talk")
+                          [:br]
+                          (link-to "https://en.wikipedia.org/wiki/Peter_Thiel" "Peter Thiel")
+                          " and "
+                          (link-to "https://en.wikipedia.org/wiki/Ayn_Rand" "Ayn Rand")
+                          [:br]
+                          (link-to "https://www.seattletimes.com/seattle-news/politics/mayor-durkan-will-ask-seattle-departments-for-budget-cuts/" "Top")
+                          " "
+                          (link-to "https://www.seattletimes.com/seattle-news/seattle-is-putting-fences-under-its-bridges-to-keep-campers-out-and-some-say-thats-wrong/" "Minds")
+                          " in Seattle"
+                          [:br]
+                          (link-to "http://www.dailymail.co.uk/sciencetech/article-5495377/Amazon-boss-Jeff-Bezos-pictured-eating-IGUANA.html" "Jeff Bezos")
+                          [:br]
+                          (link-to "https://www.thedailybeast.com/matthew-heimbachs-traditional-workers-party-implodes-over-love-triangle-turned-trailer-brawl" "Traditionalist Worker Party")]}
+                 {:date "2018/01/10"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "January 10th, 2018: The Centennial, Chili Dogs, Going in Style, and I.T."
                   :attendees ["Alex Sanchez"
