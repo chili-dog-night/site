@@ -14,7 +14,7 @@
                  [buddy/buddy-auth "1.2.0"]
                  [buddy/buddy-hashers "1.0.0"]
                  [org.postgresql/postgresql "9.4.1208"]
-                 [org.omcljs/om "1.0.0-beta1"]
+                 [org.omcljs/om "1.0.0-beta2"]
                  [org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.9.946"]
                  [org.clojure/core.async "0.3.443"]
