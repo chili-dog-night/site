@@ -1,7 +1,32 @@
 (ns chili-dog-night.data
   (:require [chili-dog-night.views :refer [link-to]]))
 
-(def make-movies-great-again [{:date "2016/08/17"
+(def make-movies-great-again [{:date "2016/03/25"
+                               :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                               :synopsis "March 25th, 2018: Demagogues and Instigators - A Face in the Crowd, The Intruder."
+                               :themes ["Demagogues and Instigators: or How I Stopped Worrying Because the Times Were Always Shitty"]
+                               :food ["Spaghetti"]
+                               :attendees ["Alex Sanchez"
+                                          "Jason Aumann"
+                                          "Greg Ryan"
+                                          "Jacob Dobner"
+                                          "Colin Teal"]
+                               :media [{:title "A Face in the Crowd" :uri "http://www.imdb.com/title/tt0050371/"}
+                                       {:title "The Intruder" :uri "http://www.imdb.com/title/tt0055019/"}]
+                               :notes [(link-to "https://fantasymovieleague.com/" "Fantasy Movie League")
+                                       [:br]
+                                       (link-to "https://en.wikipedia.org/wiki/Jumanji:_Welcome_to_the_Jungle" "Jumanji: Welcome to the Jungle")
+                                       [:br]
+                                       (link-to "https://youtu.be/PC6w427QIOo" "Jordan")
+                                       " "
+                                       (link-to "https://www.youtube.com/watch?v=IvBm0ZUfe7I" "Peterson")
+                                       [:br]
+                                       (link-to "http://chapotraphouse.com/" "Chapo Trap House")
+                                       [:br]
+                                       (link-to "https://www.twitch.tv/gooffkings" "Go Off Kings")
+                                       [:br]
+                                       (link-to "https://twitter.com/dogboner/status/494262105462550528?lang=en" "Neil deGrasse Tyson")]}
+                              {:date "2016/08/17"
                                :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
                                :synopsis "August 17th, 2016: Cult Films - Martha Marcy May Marlene, The Invitation."
                                :themes ["Cult Films"]
