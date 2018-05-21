@@ -58,7 +58,25 @@
                           (link-to "https://www.vox.com/2018/5/14/17340798/jerusalem-embassy-israel-palestinians-us-trump" "Israel")
                           [:br]
                           "Candidates of the "
-                          (link-to "https://www.huffingtonpost.com/entry/pennsylvania-dsa-major-primary-wins-state-house_us_5afbba0fe4b06a3fb50bb5d7" "DSA")]}
+                          (link-to "https://www.huffingtonpost.com/entry/pennsylvania-dsa-major-primary-wins-state-house_us_5afbba0fe4b06a3fb50bb5d7" "DSA")
+                          [:br]
+                          "The "
+                          (link-to "https://www.patreon.com/breteastonellispodcast/posts" "Bret Easton Ellis Podcast")]}
+                 {:date "2018/05/09"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "May 9th, 2018: Patriots Day"
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Greg Ryan"
+                              "Colin Teal"]
+                  :media [{:title "Patriots Day" :uri "http://www.imdb.com/title/tt4572514/"}]
+                  :notes ["Behind the scenes of "
+                          (link-to "https://www.youtube.com/watch?v=l3xc3b5taDg" "The Hobbit")
+                          [:br]
+                          "The "
+                          (link-to "https://en.wikipedia.org/wiki/Tamerlan_Tsarnaev" "Brothers")
+                          " "
+                          (link-to "https://en.wikipedia.org/wiki/Dzhokhar_Tsarnaev" "Tsarnaev")]}
                  {:date "2018/03/14"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 14th, 2018: Blackberry Pie, The Assignment, and New in Town"
