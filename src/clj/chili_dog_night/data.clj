@@ -44,7 +44,22 @@
                                        [:br]
                                        (link-to "https://en.wikipedia.org/wiki/John_Carroll_Lynch" "John Carroll Lynch")]}])
 
-(def gatherings [{:date "2018/03/14"
+(def gatherings [{:date "2018/05/16"
+                  :address "12283 Densmore Ave N, Seattle, WA 98103, USA"
+                  :synopsis "May 16th, 2018: Fifty Shades Freed"
+                  :attendees ["Alex Sanchez"
+                              "Jason Aumann"
+                              "Jacob Dobner"
+                              "Colin Teal"]
+                  :food ["Klondike Oreo Ice Cream Sandwiches"]
+                  :media [{:title "Fifty Shades Freed" :uri "http://www.imdb.com/title/tt4477536/"}]
+                  :notes [(link-to "https://en.wikipedia.org/wiki/Avengers:_Infinity_War" "Avengers: Infinity War")
+                          [:br]
+                          (link-to "https://www.vox.com/2018/5/14/17340798/jerusalem-embassy-israel-palestinians-us-trump" "Israel")
+                          [:br]
+                          "Candidates of the "
+                          (link-to "https://www.huffingtonpost.com/entry/pennsylvania-dsa-major-primary-wins-state-house_us_5afbba0fe4b06a3fb50bb5d7" "DSA")]}
+                 {:date "2018/03/14"
                   :address "3828 Meridian Ave N, Seattle, WA 98103, USA"
                   :synopsis "March 14th, 2018: Blackberry Pie, The Assignment, and New in Town"
                   :attendees ["Alex Sanchez"
